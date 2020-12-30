@@ -12,7 +12,7 @@ namespace DP_Targil1
 {
     public partial class FacebookForm : Form
     {
-        private readonly FormLogin r_FormLogin = new FormLogin();
+        private readonly FormLogin r_FormLogin = FormLogin.getForm;
         private MatchSuggestion m_MatchSuggestion;
         private FacebookUser m_SelectedMatch;
         private ImageSuggestion m_ImageSuggestion;

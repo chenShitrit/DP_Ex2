@@ -11,8 +11,9 @@ using FacebookWrapper;
 
 namespace DP_Targil1
 {
-    public partial class FormLogin : Form
+    public sealed partial class FormLogin : Form
     {
+        private static FormLogin s_FormExist = null;
         public AppSettings AppSettings { get; }
 
         public User LoggedInUser { get; set; }
@@ -21,10 +22,23 @@ namespace DP_Targil1
 
         private const string k_AppId = "350660342698485";
 
-        public FormLogin()
+        private FormLogin()
         {
-             this.InitializeComponent();
+            this.InitializeComponent();
             AppSettings = AppSettings.LoadFromFile();
+        }
+
+        public static FormLogin getForm
+        {
+            get
+            {
+                if(s_FormExist == null)
+                {
+                    s_FormExist = new FormLogin();
+                }
+
+                return s_FormExist;
+            }
         }
 
         protected override void OnShown(EventArgs i_EventArgs)
