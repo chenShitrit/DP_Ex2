@@ -1,0 +1,4 @@
+C:\Users\ONE1\Desktop\TARGIL 2\DP_Ex2\DP_Targil1\obj\Debug\DesktopFacebook.csprojAssemblyReference.cache
+C:\Users\ONE1\Desktop\TARGIL 2\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.FacebookForm.resources
+C:\Users\ONE1\Desktop\TARGIL 2\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.FormLogin.resources
+C:\Users\ONE1\Desktop\TARGIL 2\DP_Ex2\DP_Targil1\obj\Debug\DesktopFacebook.csproj.GenerateResource.cache
