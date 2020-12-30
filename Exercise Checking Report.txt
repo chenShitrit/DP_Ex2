@@ -1,9 +1,0 @@
-==========================Exercise Checking Report==========================
-Exercise No...........: 2
-First Student Details.: 315530022 - May Tzadoky
-Second Student Details: 207174970 - Chen Shitrit
-Delivery Date.........: 6 - January - 2021
-Delivered In Delay....: No
-Delay Reason..........: 
-Comments..............: 
-=======================End Exercise Checking Report=========================
