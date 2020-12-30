@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
+using System.Threading;
 
 namespace DP_Targil1
 {
@@ -32,9 +33,11 @@ namespace DP_Targil1
 
             if (this.r_FormLogin.DialogResult == DialogResult.OK)
             {
-                 this.InitializeComponent();
-                 this.fetchUserInfo();
-                 this.fetchPosts();
+                this.InitializeComponent();
+                // new Thread(fetchProfilePicture).Start();
+                new Thread(fetchUserInfo).Start();
+                new Thread(fetchPosts).Start();
+                //this.fetchPosts();
             }
         }
 
@@ -60,15 +63,20 @@ namespace DP_Targil1
             this.r_FormLogin.ShowDialog();
         }
 
+        private void fetchProfilePicture()
+        {
+            profilePictureBox.LoadAsync(this.r_FormLogin.LoggedInUser.PictureNormalURL);
+            profilePictureBox.Invoke(new Action(() => profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage));
+        }
+
         private void fetchUserInfo()
         {
-            this.profilePictureBox.LoadAsync(this.r_FormLogin.LoggedInUser.PictureNormalURL);
-            this.profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.userNameLabel.Text = this.r_FormLogin.LoggedInUser.Name;
+            new Thread(fetchProfilePicture).Start();
+            userNameLabel.Invoke(new Action(() => userNameLabel.Text = this.r_FormLogin.LoggedInUser.Name));
 
             if (this.r_FormLogin.LoggedInUser.Posts.Count > 0)
             {
-                postStatusTextBox.Text = this.r_FormLogin.LoggedInUser.Posts[0].Message;
+                postStatusTextBox.Invoke(new Action(() => postStatusTextBox.Text = this.r_FormLogin.LoggedInUser.Posts[0].Message));
             }
 
             foreach (Album album in this.r_FormLogin.LoggedInUser.Albums)
@@ -76,7 +84,7 @@ namespace DP_Targil1
                 if (album.Name == "Cover Photos")
                 {
                     coverPictureBox.LoadAsync(album.PictureAlbumURL);
-                    coverPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                    coverPictureBox.Invoke(new Action(() => coverPictureBox.SizeMode = PictureBoxSizeMode.StretchImage));
                     break;
                 }
             }
@@ -116,21 +124,21 @@ namespace DP_Targil1
 
         private void fetchPosts()
         {
-            listBoxPosts.Visible = true;
+            listBoxPosts.Invoke(new Action(() => listBoxPosts.Visible = true));
 
             foreach (Post post in this.r_FormLogin.LoggedInUser.Posts)
             {
                 if (post.Message != null)
                 {
-                    listBoxPosts.Items.Add(post.Message);
+                    listBoxPosts.Invoke(new Action(() => listBoxPosts.Items.Add(post.Message)));
                 }
                 else if (post.Caption != null)
                 {
-                    listBoxPosts.Items.Add(post.Caption);
+                    listBoxPosts.Invoke(new Action(() => listBoxPosts.Items.Add(post.Caption)));
                 }
                 else
                 {
-                    listBoxPosts.Items.Add(string.Format("[{0}]", post.Type));
+                    listBoxPosts.Invoke(new Action(() => listBoxPosts.Items.Add(string.Format("[{0}]", post.Type))));
                 }
             }
 
@@ -139,7 +147,7 @@ namespace DP_Targil1
                 MessageBox.Show("No Posts to retrieve");
             }
         }
-        
+
         private void linkAlbums_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
         {
             this.setDefaultLink();
@@ -173,7 +181,7 @@ namespace DP_Targil1
             if (listBoxAlbums.SelectedItems.Count == 1)
             {
                 Album selectedAlbum = listBoxAlbums.SelectedItem as Album;
-                
+
                 if (selectedAlbum?.PictureAlbumURL != null)
                 {
                     pictureBoxAlbum.LoadAsync(selectedAlbum.PictureAlbumURL);
@@ -273,7 +281,7 @@ namespace DP_Targil1
         {
             if (this.radioButtonNormalFilter.Checked == true)
             {
-                 this.setSourcePhoto();
+                this.setSourcePhoto();
             }
         }
 
@@ -281,12 +289,12 @@ namespace DP_Targil1
         {
             if (ListBoxPhotos.SelectedItems.Count == 1)
             {
-                 this.m_ImageSuggestion.SourcePhoto = ListBoxPhotos.SelectedItem as Photo;
-                 if (this.m_ImageSuggestion.SourcePhoto?.PictureNormalURL != null)
-                 {
-                      PictureBoxSuggests.LoadAsync(this.m_ImageSuggestion.SourcePhoto.PictureNormalURL);
-                      PictureBoxSuggests.SizeMode = PictureBoxSizeMode.StretchImage;
-                 }
+                this.m_ImageSuggestion.SourcePhoto = ListBoxPhotos.SelectedItem as Photo;
+                if (this.m_ImageSuggestion.SourcePhoto?.PictureNormalURL != null)
+                {
+                    PictureBoxSuggests.LoadAsync(this.m_ImageSuggestion.SourcePhoto.PictureNormalURL);
+                    PictureBoxSuggests.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
             }
 
             LabelAboutThePhoto.Text = this.m_ImageSuggestion.SetDetailsPhoto();
@@ -304,7 +312,7 @@ namespace DP_Targil1
         {
             if (this.radioButtonTransparencyFilter.Checked == true)
             {
-                 PictureBoxSuggests.Image = this.m_ImageSuggestion.SetFilter(eFilter.Transparency);
+                PictureBoxSuggests.Image = this.m_ImageSuggestion.SetFilter(eFilter.Transparency);
             }
         }
 
@@ -312,13 +320,13 @@ namespace DP_Targil1
         {
             if (this.radioButtonSepiaFilter.Checked == true)
             {
-                 PictureBoxSuggests.Image = this.m_ImageSuggestion.SetFilter(eFilter.Sepia);
+                PictureBoxSuggests.Image = this.m_ImageSuggestion.SetFilter(eFilter.Sepia);
             }
         }
 
         private void buttonSetProfilePic_Click(object i_Sender, EventArgs i_EventArgs)
         {
-          byte[] byteArr = this.m_ImageSuggestion.ConvertImageToBytes(this.pictureBoxSuggests.Image);
+            byte[] byteArr = this.m_ImageSuggestion.ConvertImageToBytes(this.pictureBoxSuggests.Image);
 
             try
             {
@@ -406,7 +414,7 @@ namespace DP_Targil1
                 ListBoxPhotos.Items.Add(photoList);
             }
 
-            if(ListBoxPhotos.Items.Count == 0)
+            if (ListBoxPhotos.Items.Count == 0)
             {
                 MessageBox.Show("No photos to retrieve");
             }
@@ -455,7 +463,7 @@ namespace DP_Targil1
             {
                 matcPeopleListBox.Items.Add(matchedPeople);
             }
-            
+
             if (this.m_MatchSuggestion.TopMatchedUsers.Count == 0)
             {
                 MessageBox.Show("No Match to retrieve");
@@ -488,7 +496,7 @@ namespace DP_Targil1
             this.fetchAbout(this.m_SelectedMatch.User, this.matchAboutLabel);
             percentLabel.Text = string.Format("{0}%", this.m_SelectedMatch.MatchPercentage);
         }
-        
+
         private void displaySelectedMatch()
         {
             if (matcPeopleListBox.SelectedItems.Count == 1)
@@ -523,7 +531,7 @@ namespace DP_Targil1
             }
         }
 
-        private void circlePictureBox_Paint(object i_Sender, PaintEventArgs i_EventArgs)
+        private void circlePictureBox_Paint(object i_Sender, PaintEventArgs i_EventArgs) //facade
         {
             Graphics graphics = i_EventArgs.Graphics;
             Pen pen = new Pen(Color.MediumVioletRed, 2);
