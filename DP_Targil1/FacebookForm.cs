@@ -34,10 +34,7 @@ namespace DP_Targil1
             if (this.r_FormLogin.DialogResult == DialogResult.OK)
             {
                 this.InitializeComponent();
-                // new Thread(fetchProfilePicture).Start();
                 new Thread(fetchUserInfo).Start();
-                new Thread(fetchPosts).Start();
-                //this.fetchPosts();
             }
         }
 
@@ -66,14 +63,14 @@ namespace DP_Targil1
         private void fetchProfilePicture()
         {
             profilePictureBox.LoadAsync(this.r_FormLogin.LoggedInUser.PictureNormalURL);
-            profilePictureBox.Invoke(new Action(() => profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage));
+            profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void fetchUserInfo()
         {
             new Thread(fetchProfilePicture).Start();
+            new Thread(fetchPosts).Start();
             userNameLabel.Invoke(new Action(() => userNameLabel.Text = this.r_FormLogin.LoggedInUser.Name));
-
             if (this.r_FormLogin.LoggedInUser.Posts.Count > 0)
             {
                 postStatusTextBox.Invoke(new Action(() => postStatusTextBox.Text = this.r_FormLogin.LoggedInUser.Posts[0].Message));
@@ -84,7 +81,7 @@ namespace DP_Targil1
                 if (album.Name == "Cover Photos")
                 {
                     coverPictureBox.LoadAsync(album.PictureAlbumURL);
-                    coverPictureBox.Invoke(new Action(() => coverPictureBox.SizeMode = PictureBoxSizeMode.StretchImage));
+                    coverPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
                 }
             }
@@ -155,19 +152,19 @@ namespace DP_Targil1
             listBoxAlbums.Visible = true;
             AlbumsLink.LinkColor = Color.Gray;
 
-            this.fetchAlbums();
+            new Thread(fetchAlbums).Start();
         }
 
         private void fetchAlbums()
         {
             this.AlbumsCollection = new FacebookObjectCollection<Album>();
-            listBoxAlbums.Items.Clear();
-            listBoxAlbums.DisplayMember = "Name";
+            listBoxAlbums.Invoke(new Action(() => listBoxAlbums.Items.Clear()));
+            listBoxAlbums.Invoke(new Action(() => listBoxAlbums.DisplayMember = "Name"));
 
             foreach (Album album in this.r_FormLogin.LoggedInUser.Albums)
             {
                 this.AlbumsCollection.Add(album);
-                listBoxAlbums.Items.Add(album);
+                listBoxAlbums.Invoke(new Action(() => listBoxAlbums.Items.Add(album)));
             }
 
             if (this.r_FormLogin.LoggedInUser.Albums.Count == 0)
@@ -258,17 +255,17 @@ namespace DP_Targil1
             this.setDefaultLink();
             friendsListBox.Visible = true;
             friendsLinkLabel.LinkColor = Color.Gray;
-            this.fetchFriends();
+            new Thread(fetchFriends).Start();
         }
 
         private void fetchFriends()
         {
-            friendsListBox.Items.Clear();
-            friendsListBox.DisplayMember = "Name";
+            friendsListBox.Invoke(new Action(() => friendsListBox.Items.Clear()));
+            friendsListBox.Invoke(new Action(() => friendsListBox.DisplayMember = "Name"));
 
             foreach (User friend in this.r_FormLogin.LoggedInUser.Friends)
             {
-                friendsListBox.Items.Add(friend.Name);
+                friendsListBox.Invoke(new Action(() => friendsListBox.Items.Add(friend.Name)));
             }
 
             if (this.r_FormLogin.LoggedInUser.Friends.Count == 0)

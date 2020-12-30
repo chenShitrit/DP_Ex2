@@ -15,6 +15,8 @@ namespace DP_Targil1.Patterns.Builder
             i_FBUserBuilder.initJobs();
             i_FBUserBuilder.initCity();
             i_FBUserBuilder.initFriends();
+            i_FBUserBuilder.initAge();
+
             //new Thread(i_FBUserBuilder.initGroups).Start();
             //new Thread(i_FBUserBuilder.initSchools).Start();
             //new Thread(i_FBUserBuilder.initJobs).Start();

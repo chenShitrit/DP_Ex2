@@ -16,6 +16,18 @@ namespace DP_Targil1.Patterns.Builder
             FacebookUser = new FacebookUser(i_User);
         }
 
+        public void initAge()
+        {
+            int currYear = DateTime.Now.Year;
+            int birthYear = int.Parse(FacebookUser.User.Birthday.Substring(6, 4));
+            FacebookUser.Age = currYear - birthYear;
+        }
+
+        public void initCity()
+        {
+            FacebookUser.City = FacebookUser.User.Hometown;
+        }
+
         public void initGroups()
         {
             try
@@ -59,14 +71,12 @@ namespace DP_Targil1.Patterns.Builder
             }
         }
 
-        public void initCity()
-        {
-            FacebookUser.City = FacebookUser.User.Hometown;
-        }
+
 
         public FacebookUser GetFacebookUser()
         {
             return FacebookUser;
         }
+
     }
 }

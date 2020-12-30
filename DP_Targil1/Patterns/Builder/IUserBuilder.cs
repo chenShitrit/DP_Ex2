@@ -9,6 +9,8 @@ namespace DP_Targil1.Patterns.Builder
 {
     public interface IUserBuilder
     {
+        void initAge();
+
         void initGroups();
 
         void initFriends();

@@ -43,7 +43,10 @@ namespace DP_Targil1
                     {
                         if (!m_MatchPersons.ContainsKey(matchPerson.Id))
                         {
-                            m_MatchPersons.Add(matchPerson.Id, new FacebookUser(matchPerson));
+                            FacebookUserComposer facebookUserComposer = new FacebookUserComposer();
+                            IUserBuilder userBuilder = new FacebookUserBuilder(matchPerson);
+                            facebookUserComposer.Construct(userBuilder);
+                            m_MatchPersons.Add(matchPerson.Id, facebookUserComposer.GetFacebookUser(userBuilder));
                         }
                     }
                 }
@@ -65,8 +68,7 @@ namespace DP_Targil1
             {
                 isMatching = (string.IsNullOrEmpty(i_Gender) || i_User.User.Gender.ToString() == i_Gender)
                 && (string.IsNullOrEmpty(i_Hometown) || i_User.City.ToString() == i_Hometown)
-                && (i_User.Age >= i_FromAge || i_FromAge == 0)
-                && (i_User.Age <= i_ToAge || i_FromAge == 0);
+                && (((i_User.Age >= i_FromAge) && (i_User.Age <= i_ToAge))|| (i_FromAge == 0 && i_ToAge == 0));
             }
 
             return isMatching;
@@ -117,14 +119,11 @@ namespace DP_Targil1
         {
             foreach (KeyValuePair<string, FacebookUser> matchPerson in m_MatchPersons)
             {
-                if (matchPerson.Value.SchoolsCollection != null && m_CurrentUser.SchoolsCollection != null)
+                if (matchPerson.Value.SchoolsCollection.Count != 0 && m_CurrentUser.SchoolsCollection.Count != 0)
                 {
-                    if (matchPerson.Value.SchoolsCollection.Count != 0 && m_CurrentUser.SchoolsCollection.Count != 0)
+                    if (matchPerson.Value.SchoolsCollection.Last().Id == m_CurrentUser.SchoolsCollection.Last().Id)
                     {
-                        if (matchPerson.Value.SchoolsCollection.Last().Id == m_CurrentUser.SchoolsCollection.Last().Id)
-                        {
-                            matchPerson.Value.MatchPercentage += 100 / k_Params;
-                        }
+                        matchPerson.Value.MatchPercentage += 100 / k_Params;
                     }
                 }
             }
@@ -148,14 +147,11 @@ namespace DP_Targil1
         {
             foreach (KeyValuePair<string, FacebookUser> matchPerson in m_MatchPersons)
             {
-                if (matchPerson.Value.JobsCollection != null && m_CurrentUser.JobsCollection != null)
+                if (matchPerson.Value.JobsCollection.Count != 0 && m_CurrentUser.JobsCollection.Count != 0)
                 {
-                    if (matchPerson.Value.JobsCollection.Count != 0 && m_CurrentUser.JobsCollection.Count != 0)
+                    if (matchPerson.Value.JobsCollection.Last().Id == m_CurrentUser.JobsCollection.Last().Id)
                     {
-                        if (matchPerson.Value.JobsCollection.Last().Id == m_CurrentUser.JobsCollection.Last().Id)
-                        {
-                            matchPerson.Value.MatchPercentage += 100 / k_Params;
-                        }
+                        matchPerson.Value.MatchPercentage += 100 / k_Params;
                     }
                 }
             }

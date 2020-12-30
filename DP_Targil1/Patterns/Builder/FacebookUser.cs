@@ -28,16 +28,8 @@ namespace DP_Targil1
         public FacebookUser(User i_User)
         {
             User = i_User;
-            Age = convertBirthdayToAge(i_User);
         }
-
-        private int convertBirthdayToAge(User i_User)
-        {
-            int currYear = DateTime.Now.Year;
-            int birthYear = int.Parse(i_User.Birthday.Substring(6, 4));
-            return currYear - birthYear;
-        }
-                
+                        
         public override string ToString()
         {
             string matchInfo = string.Format("{0}: {1}%", User.Name, MatchPercentage);
