@@ -17,11 +17,12 @@ namespace DP_Targil1.Patterns.Builder
             i_FBUserBuilder.initFriends();
             i_FBUserBuilder.initAge();
 
+            //new Thread(i_FBUserBuilder.initFriends).Start();
             //new Thread(i_FBUserBuilder.initGroups).Start();
             //new Thread(i_FBUserBuilder.initSchools).Start();
             //new Thread(i_FBUserBuilder.initJobs).Start();
             //new Thread(i_FBUserBuilder.initCity).Start();
-            //new Thread(i_FBUserBuilder.initFriends).Start();
+            //new Thread(i_FBUserBuilder.initAge).Start();
         }
 
         public FacebookUser GetFacebookUser(IUserBuilder i_FBUserBuilder)

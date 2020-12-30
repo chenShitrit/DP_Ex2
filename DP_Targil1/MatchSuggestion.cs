@@ -5,6 +5,7 @@ using System.Text;
 using FacebookWrapper.ObjectModel;
 using DP_Targil1.Patterns.Builder;
 using FacebookWrapper;
+using System.Threading;
 
 namespace DP_Targil1
 {
@@ -109,11 +110,11 @@ namespace DP_Targil1
 
         private void checkMatchingPercentage(KeyValuePair<string, FacebookUser> i_User)
         {
-            checkCityMatch();
-            checkSchoolMatch();
-            checkGroupsMatch();
-            checkJobsMatch();
-        }
+            new Thread(checkCityMatch).Start();
+            new Thread(checkSchoolMatch).Start();
+            new Thread(checkGroupsMatch).Start();
+            new Thread(checkJobsMatch).Start();
+         }
 
         private void checkSchoolMatch()
         {
