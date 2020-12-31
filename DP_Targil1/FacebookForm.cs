@@ -7,16 +7,14 @@ using System.Drawing.Drawing2D;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 using System.Threading;
+using DP_Targil1.Patterns.Facade;
 
 namespace DP_Targil1
 {
     public partial class FacebookForm : Form
     {
-        private readonly FormLogin r_FormLogin = FormLogin.getForm;
-        private MatchSuggestion m_MatchSuggestion;
-        private FacebookUser m_SelectedMatch;
-        private ImageSuggestion m_ImageSuggestion;
-
+        private readonly FormLoginSingleton r_FormLogin = FormLoginSingleton.getForm;
+     
         public FacebookObjectCollection<Album> AlbumsCollection { get; set; }
 
         public FacebookForm()
@@ -240,14 +238,7 @@ namespace DP_Targil1
 
         private void fetchAbout(User i_User, Label i_Label)
         {
-            StringBuilder aboutString = new StringBuilder();
-            aboutString.Append(string.Format("Gender: {0}{1}", i_User.Gender, Environment.NewLine));
-            aboutString.Append(string.Format("Birth Day: {0}{1}", i_User.Birthday, Environment.NewLine));
-            aboutString.Append(string.Format("Email Address: {0}{1}", i_User.Email, Environment.NewLine));
-            aboutString.Append(string.Format("Education: {0}{1}", i_User.Educations, Environment.NewLine));
-            aboutString.Append(string.Format("Work Experience: {0}{1}", i_User.WorkExperiences, Environment.NewLine));
-            aboutString.Append(string.Format("Relationship Status: {0}{1}", i_User.RelationshipStatus, Environment.NewLine));
-            i_Label.Text = aboutString.ToString();
+            i_Label.Text = ViewModel.AboutMe(r_FormLogin.LoggedInUser);
         }
 
         private void friendsLinkLabel_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
@@ -286,22 +277,22 @@ namespace DP_Targil1
         {
             if (ListBoxPhotos.SelectedItems.Count == 1)
             {
-                this.m_ImageSuggestion.SourcePhoto = ListBoxPhotos.SelectedItem as Photo;
-                if (this.m_ImageSuggestion.SourcePhoto?.PictureNormalURL != null)
+                ViewModel.ImageSuggestion.SourcePhoto = ListBoxPhotos.SelectedItem as Photo;
+                if (ViewModel.ImageSuggestion.SourcePhoto?.PictureNormalURL != null)
                 {
-                    PictureBoxSuggests.LoadAsync(this.m_ImageSuggestion.SourcePhoto.PictureNormalURL);
+                    PictureBoxSuggests.LoadAsync(ViewModel.ImageSuggestion.SourcePhoto.PictureNormalURL);
                     PictureBoxSuggests.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
             }
 
-            LabelAboutThePhoto.Text = this.m_ImageSuggestion.SetDetailsPhoto();
+            LabelAboutThePhoto.Text = ViewModel.ImageSuggestion.SetDetailsPhoto();
         }
 
         private void radioButtonBlackAndWhiteFilter_CheckedChanged(object i_Sender, EventArgs i_EventArgs)
         {
             if (this.radioButtonBlackAndWhiteFilter.Checked == true)
             {
-                PictureBoxSuggests.Image = this.m_ImageSuggestion.SetFilter(eFilter.BlackAndWhite);
+                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter(eFilter.BlackAndWhite);
             }
         }
 
@@ -309,7 +300,7 @@ namespace DP_Targil1
         {
             if (this.radioButtonTransparencyFilter.Checked == true)
             {
-                PictureBoxSuggests.Image = this.m_ImageSuggestion.SetFilter(eFilter.Transparency);
+                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter(eFilter.Transparency);
             }
         }
 
@@ -317,36 +308,21 @@ namespace DP_Targil1
         {
             if (this.radioButtonSepiaFilter.Checked == true)
             {
-                PictureBoxSuggests.Image = this.m_ImageSuggestion.SetFilter(eFilter.Sepia);
+                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter(eFilter.Sepia);
             }
         }
 
         private void buttonSetProfilePic_Click(object i_Sender, EventArgs i_EventArgs)
         {
-            byte[] byteArr = this.m_ImageSuggestion.ConvertImageToBytes(this.pictureBoxSuggests.Image);
-
-            try
-            {
-                foreach (Album album in this.r_FormLogin.LoggedInUser.Albums)
-                {
-                    if (album.Name == "Profile Pictures")
-                    {
-                        album.UploadPhoto(byteArr);
-                        MessageBox.Show("Image uploaded successfully!");
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Unable to upload image");
-            }
+            byte[] byteArr = ViewModel.ImageSuggestion.ConvertImageToBytes(this.pictureBoxSuggests.Image);
+            ViewModel.setPicture(byteArr, r_FormLogin.LoggedInUser);
         }
 
         private void linkLabelByLikes_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
         {
             this.setDefaultLink();
             linkLabelByLikes.LinkColor = Color.Gray;
-            this.m_ImageSuggestion.SortListPhotos(eSort.ByLikes);
+            ViewModel.ImageSuggestion.SortListPhotos(eSort.ByLikes);
             linkLabelByLikes.Enabled = false;
             this.loadToListBoxPhotos();
         }
@@ -355,7 +331,7 @@ namespace DP_Targil1
         {
             this.setDefaultLink();
             linkLabelByComments.LinkColor = Color.Gray;
-            this.m_ImageSuggestion.SortListPhotos(eSort.ByComments);
+            ViewModel.ImageSuggestion.SortListPhotos(eSort.ByComments);
             linkLabelByComments.Enabled = false;
             this.loadToListBoxPhotos();
         }
@@ -364,32 +340,16 @@ namespace DP_Targil1
         {
             this.setDefaultLink();
             linkLabelLikesAndComments.LinkColor = Color.Gray;
-            this.m_ImageSuggestion.SortListPhotos(eSort.ByLikesAndComments);
+            ViewModel.ImageSuggestion.SortListPhotos(eSort.ByLikesAndComments);
             linkLabelLikesAndComments.Enabled = false;
             this.loadToListBoxPhotos();
-        }
-
-        private bool checkGenderValidity(string i_Gender)
-        {
-            bool isValid = false;
-            if (i_Gender.ToLower() == "female" || i_Gender.ToLower() == "male")
-            {
-                isValid = true;
-            }
-            else
-            {
-                isValid = false;
-                MessageBox.Show("Please enter female or male");
-            }
-
-            return isValid;
         }
 
         private void buttonSuggestMeImage_Click(object i_Sender, EventArgs i_EventArgs)
         {
             pictureBoxSuggests.Visible = true;
             labelChoosePhoto.Visible = true;
-            this.m_ImageSuggestion = new ImageSuggestion(this.r_FormLogin.LoggedInUser);
+            ViewModel.ImageSuggestion = new ImageSuggestion(this.r_FormLogin.LoggedInUser);
             listBoxPhotos.Visible = true;
             labelOrderBy.Visible = true;
             buttonSuggestMe.Visible = false;
@@ -398,7 +358,7 @@ namespace DP_Targil1
             linkLabelByLikes.Visible = true;
             linkLabelLikesAndComments.Enabled = false;
             labelDetails.Visible = true;
-            this.m_ImageSuggestion.SortListPhotos(eSort.ByLikesAndComments);
+            ViewModel.ImageSuggestion.SortListPhotos(eSort.ByLikesAndComments);
 
             this.loadToListBoxPhotos();
         }
@@ -406,7 +366,7 @@ namespace DP_Targil1
         private void loadToListBoxPhotos()
         {
             ListBoxPhotos.Items.Clear();
-            foreach (Photo photoList in this.m_ImageSuggestion.Photos)
+            foreach (Photo photoList in ViewModel.ImageSuggestion.Photos)
             {
                 ListBoxPhotos.Items.Add(photoList);
             }
@@ -420,11 +380,10 @@ namespace DP_Targil1
         private void suggestMeMatchingButtom_Click(object sender, EventArgs e)
         {
             this.cleanProfileData();
-            this.m_MatchSuggestion = new MatchSuggestion(this.r_FormLogin.LoggedInUser);
-            this.m_SelectedMatch = null;
-
+            ViewModel.MatchSuggestion = new MatchSuggestion(this.r_FormLogin.LoggedInUser);
+            ViewModel.SelectedMatch = null;
             matcPeopleListBox.Items.Clear();
-            this.m_MatchSuggestion.TopMatchedUsers.Clear();
+            ViewModel.MatchSuggestion.TopMatchedUsers.Clear();
             matcPeopleListBox.DisplayMember = "Name";
             string filteredGender = null;
             int filteredFromAge = 0;
@@ -433,7 +392,7 @@ namespace DP_Targil1
 
             if (!string.IsNullOrEmpty(genderTextBox.Text))
             {
-                if (this.checkGenderValidity(genderTextBox.Text))
+                if (ViewModel.CheckGenderValidity(genderTextBox.Text))
                 {
                     filteredGender = genderTextBox.Text.ToLower();
                 }
@@ -454,14 +413,14 @@ namespace DP_Targil1
                 filteredToAge = int.Parse(this.toAgeTextBox.Text);
             }
 
-            this.m_MatchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
+           ViewModel.MatchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
 
-            foreach (FacebookUser matchedPeople in this.m_MatchSuggestion.TopMatchedUsers)
+            foreach (FacebookUser matchedPeople in ViewModel.MatchSuggestion.TopMatchedUsers)
             {
                 matcPeopleListBox.Items.Add(matchedPeople);
             }
 
-            if (this.m_MatchSuggestion.TopMatchedUsers.Count == 0)
+            if (ViewModel.MatchSuggestion.TopMatchedUsers.Count == 0)
             {
                 MessageBox.Show("No Match to retrieve");
             }
@@ -487,19 +446,19 @@ namespace DP_Targil1
             matchPictureBox.Visible = true;
             matchAboutLabel.Visible = true;
             percentLabel.Visible = true;
-            this.messageButton.Text = string.Format("Post a meesage on {0}'s wall", this.m_SelectedMatch.User.FirstName);
-            this.matchPictureBox.LoadAsync(this.m_SelectedMatch.User.PictureNormalURL);
+            this.messageButton.Text = string.Format("Post a meesage on {0}'s wall",ViewModel.SelectedMatch.User.FirstName);
+            this.matchPictureBox.LoadAsync(ViewModel.SelectedMatch.User.PictureNormalURL);
             profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.fetchAbout(this.m_SelectedMatch.User, this.matchAboutLabel);
-            percentLabel.Text = string.Format("{0}%", this.m_SelectedMatch.MatchPercentage);
+            this.fetchAbout(ViewModel.SelectedMatch.User, this.matchAboutLabel);
+            percentLabel.Text = string.Format("{0}%",ViewModel.SelectedMatch.MatchPercentage);
         }
 
         private void displaySelectedMatch()
         {
             if (matcPeopleListBox.SelectedItems.Count == 1)
             {
-                this.m_SelectedMatch = this.matcPeopleListBox.SelectedItem as FacebookUser;
-                if (this.m_SelectedMatch != null)
+                ViewModel.SelectedMatch = this.matcPeopleListBox.SelectedItem as FacebookUser;
+                if (ViewModel.SelectedMatch != null)
                 {
                     this.displayMatchData();
                 }
@@ -517,22 +476,12 @@ namespace DP_Targil1
 
         private void messageButton_Click(object i_Sender, EventArgs i_EventArgs)
         {
-            try
-            {
-                Status postedStatus = this.m_SelectedMatch.User.PostStatus(matchTextBox.Text);
-                MessageBox.Show("Status Posted! ID: " + postedStatus.Id);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Error: Status could not be posted");
-            }
+            ViewModel.PostStatus(matchTextBox.Text);            
         }
 
-        private void circlePictureBox_Paint(object i_Sender, PaintEventArgs i_EventArgs) //facade
+        private void circlePictureBox_Paint(object i_Sender, PaintEventArgs i_EventArgs) 
         {
-            Graphics graphics = i_EventArgs.Graphics;
-            Pen pen = new Pen(Color.MediumVioletRed, 2);
-            graphics.DrawEllipse(pen, 0, 0, 55, 55);
+            ViewModel.DrawPicture(i_EventArgs);
         }
 
         private void matchAlert_Click(object i_Sender, EventArgs i_EventArgs)
@@ -540,7 +489,7 @@ namespace DP_Targil1
             matcPeopleListBox.Items.Clear();
             matcPeopleListBox.DisplayMember = "Name";
 
-            foreach (FacebookUser match in this.m_MatchSuggestion.TopMatchedUsers)
+            foreach (FacebookUser match in ViewModel.MatchSuggestion.TopMatchedUsers)
             {
                 if (match.MatchPercentage >= 75)
                 {
