@@ -11,9 +11,9 @@ using FacebookWrapper;
 
 namespace DP_Targil1
 {
-    public sealed partial class FormLogin : Form
+    public sealed partial class FormLoginSingleton : Form
     {
-        private static FormLogin s_FormExist = null;
+        private static FormLoginSingleton s_FormExist = null;
         public AppSettings AppSettings { get; }
 
         public User LoggedInUser { get; set; }
@@ -22,19 +22,19 @@ namespace DP_Targil1
 
         private const string k_AppId = "350660342698485";
 
-        private FormLogin()
+        private FormLoginSingleton()
         {
             this.InitializeComponent();
             AppSettings = AppSettings.LoadFromFile();
         }
 
-        public static FormLogin getForm
+        public static FormLoginSingleton getForm
         {
             get
             {
                 if(s_FormExist == null)
                 {
-                    s_FormExist = new FormLogin();
+                    s_FormExist = new FormLoginSingleton();
                 }
 
                 return s_FormExist;
