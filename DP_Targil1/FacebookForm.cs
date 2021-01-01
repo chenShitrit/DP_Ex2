@@ -177,7 +177,7 @@ namespace DP_Targil1
 
         private void fetchAbout(User i_User, Label i_Label)
         {
-            i_Label.Text = ViewModel.AboutMe(r_FormLogin.LoggedInUser);
+            i_Label.Text = ViewModel.AboutMe(i_User);
         }
 
         private void friendsLinkLabel_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
