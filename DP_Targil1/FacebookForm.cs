@@ -64,10 +64,18 @@ namespace DP_Targil1
             profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
+        private void fetchMatchAlert()
+        {
+            ViewModel.MatchSuggestion = new MatchSuggestion(this.r_FormLogin.LoggedInUser);
+            ViewModel.MatchSuggestion.CheckPersonMatch(null, 0, 0, null);
+        }
+
         private void fetchUserInfo()
         {
-            new Thread(fetchProfilePicture).Start();
             new Thread(fetchPosts).Start();
+            new Thread(fetchProfilePicture).Start();
+            new Thread(fetchMatchAlert).Start();
+            
             userNameLabel.Invoke(new Action(() => userNameLabel.Text = this.r_FormLogin.LoggedInUser.Name));
             if (this.r_FormLogin.LoggedInUser.Posts.Count > 0)
             {
@@ -94,19 +102,6 @@ namespace DP_Targil1
             graphicsPathOfSuggests.AddEllipse(0, 0, PictureBoxSuggests.Width, PictureBoxSuggests.Height);
             PictureBoxSuggests.Region = new System.Drawing.Region(graphicsPathOfSuggests);
             base.OnPaint(i_EventArgs);
-        }
-
-        private void buttonSetStatus_Click(object i_Sender, EventArgs i_EventArgs)
-        {
-            try
-            {
-                Status postedStatus = this.r_FormLogin.LoggedInUser.PostStatus(postStatusTextBox.Text);
-                MessageBox.Show("Status Posted! ID: " + postedStatus.Id);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Error: Status could not be posted");
-            }
         }
 
         private void linkPosts_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
@@ -412,8 +407,8 @@ namespace DP_Targil1
             {
                 filteredToAge = int.Parse(this.toAgeTextBox.Text);
             }
-
-           ViewModel.MatchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
+           
+            ViewModel.MatchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
 
             foreach (FacebookUser matchedPeople in ViewModel.MatchSuggestion.TopMatchedUsers)
             {
@@ -480,6 +475,11 @@ namespace DP_Targil1
             ViewModel.PostStatus(matchTextBox.Text);            
         }
 
+        private void buttonSetStatus_Click(object i_Sender, EventArgs i_EventArgs)
+        {
+            ViewModel.PostStatus(postStatusTextBox.Text);
+        }
+
         private void circlePictureBox_Paint(object i_Sender, PaintEventArgs i_EventArgs) 
         {
             ViewModel.DrawPicture(i_EventArgs);
@@ -487,20 +487,20 @@ namespace DP_Targil1
 
         private void matchAlert_Click(object i_Sender, EventArgs i_EventArgs)
         {
-            matcPeopleListBox.Items.Clear();
-            matcPeopleListBox.DisplayMember = "Name";
-
+            matcPeopleListBox.Invoke(new Action(() => matcPeopleListBox.Items.Clear()));
+            matcPeopleListBox.Invoke(new Action(() => matcPeopleListBox.DisplayMember = "Name"));
+            
             foreach (FacebookUser match in ViewModel.MatchSuggestion.TopMatchedUsers)
             {
                 if (match.MatchPercentage >= 75)
                 {
-                    matchAlertListBox.Items.Add(match);
+                    matchAlertListBox.Invoke(new Action(() => matchAlertListBox.Items.Add(match)));
                 }
             }
 
             if (matchAlertListBox.Items.Count > 0)
             {
-                this.matchAlertListBox.Visible = true;
+                matchAlertListBox.Invoke(new Action(() => matchAlertListBox.Visible = true));
             }
             else
             {
