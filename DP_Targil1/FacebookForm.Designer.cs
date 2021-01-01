@@ -34,14 +34,17 @@ namespace DP_Targil1
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FacebookForm));
             this.listBoxAlbums = new System.Windows.Forms.ListBox();
+            this.albumBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.postStatusLabel = new System.Windows.Forms.Label();
             this.postStatusTextBox = new System.Windows.Forms.TextBox();
             this.postStatusButtonSet = new System.Windows.Forms.Button();
             this.listBoxPosts = new System.Windows.Forms.ListBox();
+            this.postBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AlbumsLink = new System.Windows.Forms.LinkLabel();
             this.linkPosts = new System.Windows.Forms.LinkLabel();
             this.facebookTabControl = new System.Windows.Forms.TabControl();
             this.myProfileTabPage = new System.Windows.Forms.TabPage();
+            this.messageTextBox = new System.Windows.Forms.TextBox();
             this.matchAlertListBox = new System.Windows.Forms.ListBox();
             this.matchAlert = new System.Windows.Forms.PictureBox();
             this.aboutMeLabel = new System.Windows.Forms.Label();
@@ -51,7 +54,6 @@ namespace DP_Targil1
             this.profilePictureBox = new System.Windows.Forms.PictureBox();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.userNameLabel = new System.Windows.Forms.Label();
-            this.pictureBoxAlbum = new System.Windows.Forms.PictureBox();
             this.coverPictureBox = new System.Windows.Forms.PictureBox();
             this.friendsListBox = new System.Windows.Forms.ListBox();
             this.matchPeopleTabPage = new System.Windows.Forms.TabPage();
@@ -92,24 +94,26 @@ namespace DP_Targil1
             this.buttonSuggestMe = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.postBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.messageTextBox = new System.Windows.Forms.TextBox();
+            this.imageAlbumPictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.albumBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postBindingSource)).BeginInit();
             this.facebookTabControl.SuspendLayout();
             this.myProfileTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matchAlert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlbum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coverPictureBox)).BeginInit();
             this.matchPeopleTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matchPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox)).BeginInit();
             this.imageSuggestaionTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSuggests)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.postBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageAlbumPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // listBoxAlbums
             // 
+            this.listBoxAlbums.DataSource = this.albumBindingSource;
+            this.listBoxAlbums.DisplayMember = "Name";
             this.listBoxAlbums.FormattingEnabled = true;
             this.listBoxAlbums.ItemHeight = 16;
             this.listBoxAlbums.Location = new System.Drawing.Point(68, 444);
@@ -118,7 +122,10 @@ namespace DP_Targil1
             this.listBoxAlbums.Size = new System.Drawing.Size(831, 196);
             this.listBoxAlbums.TabIndex = 37;
             this.listBoxAlbums.Visible = false;
-            this.listBoxAlbums.SelectedIndexChanged += new System.EventHandler(this.listBoxAlbums_SelectedIndexChanged);
+            // 
+            // albumBindingSource
+            // 
+            this.albumBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.Album);
             // 
             // postStatusLabel
             // 
@@ -169,6 +176,10 @@ namespace DP_Targil1
             this.listBoxPosts.TabIndex = 40;
             this.listBoxPosts.Visible = false;
             // 
+            // postBindingSource
+            // 
+            this.postBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.Post);
+            // 
             // AlbumsLink
             // 
             this.AlbumsLink.AutoSize = true;
@@ -218,6 +229,7 @@ namespace DP_Targil1
             // 
             this.myProfileTabPage.AutoScroll = true;
             this.myProfileTabPage.BackColor = System.Drawing.Color.LightBlue;
+            this.myProfileTabPage.Controls.Add(this.imageAlbumPictureBox);
             this.myProfileTabPage.Controls.Add(this.messageTextBox);
             this.myProfileTabPage.Controls.Add(this.matchAlertListBox);
             this.myProfileTabPage.Controls.Add(this.matchAlert);
@@ -228,7 +240,6 @@ namespace DP_Targil1
             this.myProfileTabPage.Controls.Add(this.profilePictureBox);
             this.myProfileTabPage.Controls.Add(this.buttonLogout);
             this.myProfileTabPage.Controls.Add(this.userNameLabel);
-            this.myProfileTabPage.Controls.Add(this.pictureBoxAlbum);
             this.myProfileTabPage.Controls.Add(this.listBoxAlbums);
             this.myProfileTabPage.Controls.Add(this.AlbumsLink);
             this.myProfileTabPage.Controls.Add(this.listBoxPosts);
@@ -245,6 +256,16 @@ namespace DP_Targil1
             this.myProfileTabPage.Size = new System.Drawing.Size(929, 658);
             this.myProfileTabPage.TabIndex = 1;
             this.myProfileTabPage.Text = "My Profile";
+            // 
+            // messageTextBox
+            // 
+            this.messageTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.postBindingSource, "Message", true));
+            this.messageTextBox.Location = new System.Drawing.Point(635, 444);
+            this.messageTextBox.Multiline = true;
+            this.messageTextBox.Name = "messageTextBox";
+            this.messageTextBox.Size = new System.Drawing.Size(237, 100);
+            this.messageTextBox.TabIndex = 75;
+            this.messageTextBox.Visible = false;
             // 
             // matchAlertListBox
             // 
@@ -359,18 +380,6 @@ namespace DP_Targil1
             this.userNameLabel.TabIndex = 63;
             this.userNameLabel.Text = "userNames";
             this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBoxAlbum
-            // 
-            this.pictureBoxAlbum.BackColor = System.Drawing.Color.LightBlue;
-            this.pictureBoxAlbum.Location = new System.Drawing.Point(635, 443);
-            this.pictureBoxAlbum.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBoxAlbum.Name = "pictureBoxAlbum";
-            this.pictureBoxAlbum.Size = new System.Drawing.Size(265, 197);
-            this.pictureBoxAlbum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxAlbum.TabIndex = 42;
-            this.pictureBoxAlbum.TabStop = false;
-            this.pictureBoxAlbum.Visible = false;
             // 
             // coverPictureBox
             // 
@@ -856,19 +865,16 @@ namespace DP_Targil1
             this.buttonSuggestMe.UseVisualStyleBackColor = true;
             this.buttonSuggestMe.Click += new System.EventHandler(this.buttonSuggestMeImage_Click);
             // 
-            // postBindingSource
+            // imageAlbumPictureBox
             // 
-            this.postBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.Post);
-            // 
-            // messageTextBox
-            // 
-            this.messageTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.postBindingSource, "Message", true));
-            this.messageTextBox.Location = new System.Drawing.Point(635, 444);
-            this.messageTextBox.Multiline = true;
-            this.messageTextBox.Name = "messageTextBox";
-            this.messageTextBox.Size = new System.Drawing.Size(237, 100);
-            this.messageTextBox.TabIndex = 75;
-            this.messageTextBox.Visible = false;
+            this.imageAlbumPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.albumBindingSource, "ImageAlbum", true));
+            this.imageAlbumPictureBox.Location = new System.Drawing.Point(635, 444);
+            this.imageAlbumPictureBox.Name = "imageAlbumPictureBox";
+            this.imageAlbumPictureBox.Size = new System.Drawing.Size(246, 196);
+            this.imageAlbumPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageAlbumPictureBox.TabIndex = 77;
+            this.imageAlbumPictureBox.TabStop = false;
+            this.imageAlbumPictureBox.Visible = false;
             // 
             // FacebookForm
             // 
@@ -881,12 +887,13 @@ namespace DP_Targil1
             this.Name = "FacebookForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facebook For Desktop";
+            ((System.ComponentModel.ISupportInitialize)(this.albumBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postBindingSource)).EndInit();
             this.facebookTabControl.ResumeLayout(false);
             this.myProfileTabPage.ResumeLayout(false);
             this.myProfileTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matchAlert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlbum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coverPictureBox)).EndInit();
             this.matchPeopleTabPage.ResumeLayout(false);
             this.matchPeopleTabPage.PerformLayout();
@@ -895,14 +902,12 @@ namespace DP_Targil1
             this.imageSuggestaionTabPage.ResumeLayout(false);
             this.imageSuggestaionTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSuggests)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.postBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageAlbumPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBoxAlbum;
         private System.Windows.Forms.PictureBox profilePictureBox;
         private System.Windows.Forms.ListBox listBoxAlbums;
         private System.Windows.Forms.Label postStatusLabel;
@@ -963,6 +968,8 @@ namespace DP_Targil1
         private Button SuggestMeMatchingButtom;
         private BindingSource postBindingSource;
         private TextBox messageTextBox;
+        private BindingSource albumBindingSource;
+        private PictureBox imageAlbumPictureBox;
 
         public Label LabelAboutThePhoto
         {

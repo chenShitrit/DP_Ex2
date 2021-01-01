@@ -14,9 +14,7 @@ namespace DP_Targil1
     public partial class FacebookForm : Form
     {
         private readonly FormLoginSingleton r_FormLogin = FormLoginSingleton.getForm;
-     
-        public FacebookObjectCollection<Album> AlbumsCollection { get; set; }
-
+        
         public FacebookForm()
         {
             FacebookWrapper.FacebookService.s_CollectionLimit = 1000;
@@ -121,7 +119,6 @@ namespace DP_Targil1
         private void linkAlbums_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
         {
             this.setDefaultLink();
-            pictureBoxAlbum.Visible = true;
             listBoxAlbums.Visible = true;
             AlbumsLink.LinkColor = Color.Gray;
 
@@ -130,42 +127,8 @@ namespace DP_Targil1
 
         private void fetchAlbums()
         {
-            this.AlbumsCollection = new FacebookObjectCollection<Album>();
-            listBoxAlbums.Invoke(new Action(() => listBoxAlbums.Items.Clear()));
-            listBoxAlbums.Invoke(new Action(() => listBoxAlbums.DisplayMember = "Name"));
-
-            foreach (Album album in this.r_FormLogin.LoggedInUser.Albums)
-            {
-                this.AlbumsCollection.Add(album);
-                listBoxAlbums.Invoke(new Action(() => listBoxAlbums.Items.Add(album)));
-            }
-
-            if (this.r_FormLogin.LoggedInUser.Albums.Count == 0)
-            {
-                MessageBox.Show("No Albums to retrieve");
-            }
-        }
-
-        private void displaySelectedAlbum()
-        {
-            if (listBoxAlbums.SelectedItems.Count == 1)
-            {
-                Album selectedAlbum = listBoxAlbums.SelectedItem as Album;
-
-                if (selectedAlbum?.PictureAlbumURL != null)
-                {
-                    pictureBoxAlbum.LoadAsync(selectedAlbum.PictureAlbumURL);
-                }
-                else
-                {
-                    profilePictureBox.Image = profilePictureBox.ErrorImage;
-                }
-            }
-        }
-
-        private void listBoxAlbums_SelectedIndexChanged(object i_Sender, EventArgs i_EventArgs)
-        {
-            this.displaySelectedAlbum();
+            imageAlbumPictureBox.Invoke(new Action(() => imageAlbumPictureBox.Visible = true));
+            albumBindingSource.DataSource = r_FormLogin.LoggedInUser.Albums;
         }
 
         private void listBoxPhotos_SelectedIndexChanged(object i_Sender, EventArgs i_EventArgs)
@@ -205,7 +168,7 @@ namespace DP_Targil1
             listBoxAlbums.Visible = false;
             friendsListBox.Visible = false;
             aboutLabel.Visible = false;
-            pictureBoxAlbum.Visible = false;
+            imageAlbumPictureBox.Visible = false;
             aboutMeLabel.Visible = false;
             linkLabelByLikes.Enabled = true;
             linkLabelByComments.Enabled = true;
