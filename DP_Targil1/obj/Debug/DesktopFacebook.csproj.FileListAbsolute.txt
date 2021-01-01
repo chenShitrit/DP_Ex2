@@ -74,3 +74,15 @@ C:\Users\ONE1\Desktop\data\DP_Ex2\DP_Targil1\obj\Debug\DesktopFacebook.csproj.Co
 C:\Users\ONE1\Desktop\data\DP_Ex2\DP_Targil1\obj\Debug\DesktopFacebook.csproj.CopyComplete
 C:\Users\ONE1\Desktop\data\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.exe
 C:\Users\ONE1\Desktop\data\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.pdb
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\bin\Debug\DP_Targil1.exe.config
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\bin\Debug\DP_Targil1.exe
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\bin\Debug\DP_Targil1.pdb
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DesktopFacebook.csprojAssemblyReference.cache
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.FacebookForm.resources
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.FormLoginSingleton.resources
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.Properties.Resources.resources
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DesktopFacebook.csproj.GenerateResource.cache
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DesktopFacebook.csproj.CoreCompileInputs.cache
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DesktopFacebook.csproj.CopyComplete
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.exe
+C:\Users\ONE1\Desktop\lastt\DP_Ex2\DP_Targil1\obj\Debug\DP_Targil1.pdb
