@@ -108,34 +108,14 @@ namespace DP_Targil1
         {
             this.setDefaultLink();
             linkPosts.LinkColor = Color.Gray;
-
             this.fetchPosts();
         }
 
         private void fetchPosts()
         {
             listBoxPosts.Invoke(new Action(() => listBoxPosts.Visible = true));
-
-            foreach (Post post in this.r_FormLogin.LoggedInUser.Posts)
-            {
-                if (post.Message != null)
-                {
-                    listBoxPosts.Invoke(new Action(() => listBoxPosts.Items.Add(post.Message)));
-                }
-                else if (post.Caption != null)
-                {
-                    listBoxPosts.Invoke(new Action(() => listBoxPosts.Items.Add(post.Caption)));
-                }
-                else
-                {
-                    listBoxPosts.Invoke(new Action(() => listBoxPosts.Items.Add(string.Format("[{0}]", post.Type))));
-                }
-            }
-
-            if (this.r_FormLogin.LoggedInUser.Posts.Count == 0)
-            {
-                MessageBox.Show("No Posts to retrieve");
-            }
+            messageTextBox.Invoke(new Action(() => messageTextBox.Visible = true));
+            postBindingSource.DataSource = r_FormLogin.LoggedInUser.Posts;
         }
 
         private void linkAlbums_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
@@ -221,6 +201,7 @@ namespace DP_Targil1
             linkLabelByComments.LinkColor = Color.Navy;
             linkLabelLikesAndComments.LinkColor = Color.Navy;
             listBoxPosts.Visible = false;
+            messageTextBox.Visible = false;
             listBoxAlbums.Visible = false;
             friendsListBox.Visible = false;
             aboutLabel.Visible = false;

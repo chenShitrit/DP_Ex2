@@ -98,6 +98,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Post.datasource" />
     <None Include="Properties\ורוד-לבבות.jpg" />
   </ItemGroup>
   <ItemGroup>
