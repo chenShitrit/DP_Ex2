@@ -1,11 +1,11 @@
-﻿using System;
+﻿using System.Threading;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using FacebookWrapper.ObjectModel;
 using DP_Targil1.Patterns.Builder;
 using FacebookWrapper;
-using System.Threading;
 
 namespace DP_Targil1
 {
@@ -69,7 +69,7 @@ namespace DP_Targil1
             {
                 isMatching = (string.IsNullOrEmpty(i_Gender) || i_User.User.Gender.ToString() == i_Gender)
                 && (string.IsNullOrEmpty(i_Hometown) || i_User.City.ToString() == i_Hometown)
-                && (((i_User.Age >= i_FromAge) && (i_User.Age <= i_ToAge))|| (i_FromAge == 0 && i_ToAge == 0));
+                && (((i_User.Age >= i_FromAge) && (i_User.Age <= i_ToAge)) || (i_FromAge == 0 && i_ToAge == 0));
             }
 
             return isMatching;

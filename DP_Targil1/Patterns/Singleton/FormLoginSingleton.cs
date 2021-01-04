@@ -13,32 +13,32 @@ namespace DP_Targil1
 {
     public sealed partial class FormLoginSingleton : Form
     {
-        private static FormLoginSingleton s_FormExist = null;
-        public AppSettings AppSettings { get; }
-
-        public User LoggedInUser { get; set; }
-
-        public LoginResult LoginResult { get; set; }
-
         private const string k_AppId = "350660342698485";
-
-        private FormLoginSingleton()
-        {
-            this.InitializeComponent();
-            AppSettings = AppSettings.LoadFromFile();
-        }
+        private static FormLoginSingleton s_FormExist = null;
 
         public static FormLoginSingleton getForm
         {
             get
             {
-                if(s_FormExist == null)
+                if (s_FormExist == null)
                 {
                     s_FormExist = new FormLoginSingleton();
                 }
 
                 return s_FormExist;
             }
+        }
+
+        public AppSettings AppSettings { get; }
+
+        public User LoggedInUser { get; set; }
+
+        public LoginResult LoginResult { get; set; }
+
+        private FormLoginSingleton()
+        {
+            this.InitializeComponent();
+            AppSettings = AppSettings.LoadFromFile();
         }
 
         protected override void OnShown(EventArgs i_EventArgs)

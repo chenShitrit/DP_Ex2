@@ -469,7 +469,7 @@ namespace DP_Targil1
             this.SuggestMeMatchingButtom.TabIndex = 90;
             this.SuggestMeMatchingButtom.Text = "Suggest Me Matched People";
             this.SuggestMeMatchingButtom.UseVisualStyleBackColor = true;
-            this.SuggestMeMatchingButtom.Click += new System.EventHandler(this.suggestMeMatchingButtom_Click);
+            this.SuggestMeMatchingButtom.Click += new System.EventHandler(this.suggestMeMatchingButton_Click);
             // 
             // genderTextBox
             // 

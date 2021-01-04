@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Threading;
+using System;
 using System.ComponentModel.Design;
 using System.Windows.Forms;
 using System.Text;
@@ -6,7 +7,6 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
-using System.Threading;
 using DP_Targil1.Patterns.Facade;
 
 namespace DP_Targil1
@@ -30,7 +30,7 @@ namespace DP_Targil1
             if (this.r_FormLogin.DialogResult == DialogResult.OK)
             {
                 this.InitializeComponent();
-                new Thread(fetchUserInfo).Start();
+                new Thread(this.fetchUserInfo).Start();
             }
         }
 
@@ -70,9 +70,9 @@ namespace DP_Targil1
 
         private void fetchUserInfo()
         {
-            new Thread(fetchPosts).Start();
-            new Thread(fetchProfilePicture).Start();
-            new Thread(fetchMatchAlert).Start();
+            new Thread(this.fetchPosts).Start();
+            new Thread(this.fetchProfilePicture).Start();
+            new Thread(this.fetchMatchAlert).Start();
             
             userNameLabel.Invoke(new Action(() => userNameLabel.Text = this.r_FormLogin.LoggedInUser.Name));
             if (this.r_FormLogin.LoggedInUser.Posts.Count > 0)
@@ -113,7 +113,7 @@ namespace DP_Targil1
         {
             listBoxPosts.Invoke(new Action(() => listBoxPosts.Visible = true));
             messageTextBox.Invoke(new Action(() => messageTextBox.Visible = true));
-            postBindingSource.DataSource = r_FormLogin.LoggedInUser.Posts;
+            postBindingSource.DataSource = this.r_FormLogin.LoggedInUser.Posts;
         }
 
         private void linkAlbums_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
@@ -122,13 +122,13 @@ namespace DP_Targil1
             listBoxAlbums.Visible = true;
             AlbumsLink.LinkColor = Color.Gray;
 
-            new Thread(fetchAlbums).Start();
+            new Thread(this.fetchAlbums).Start();
         }
 
         private void fetchAlbums()
         {
             imageAlbumPictureBox.Invoke(new Action(() => imageAlbumPictureBox.Visible = true));
-            albumBindingSource.DataSource = r_FormLogin.LoggedInUser.Albums;
+            albumBindingSource.DataSource = this.r_FormLogin.LoggedInUser.Albums;
         }
 
         private void listBoxPhotos_SelectedIndexChanged(object i_Sender, EventArgs i_EventArgs)
@@ -185,7 +185,7 @@ namespace DP_Targil1
             this.setDefaultLink();
             friendsListBox.Visible = true;
             friendsLinkLabel.LinkColor = Color.Gray;
-            new Thread(fetchFriends).Start();
+            new Thread(this.fetchFriends).Start();
         }
 
         private void fetchFriends()
@@ -254,7 +254,7 @@ namespace DP_Targil1
         private void buttonSetProfilePic_Click(object i_Sender, EventArgs i_EventArgs)
         {
             byte[] byteArr = ViewModel.ImageSuggestion.ConvertImageToBytes(this.pictureBoxSuggests.Image);
-            ViewModel.setPicture(byteArr, r_FormLogin.LoggedInUser);
+            ViewModel.setPicture(byteArr, this.r_FormLogin.LoggedInUser);
         }
 
         private void linkLabelByLikes_LinkClicked(object i_Sender, LinkLabelLinkClickedEventArgs i_EventArgs)
@@ -316,7 +316,7 @@ namespace DP_Targil1
             }
         }
 
-        private void suggestMeMatchingButtom_Click(object sender, EventArgs e)
+        private void suggestMeMatchingButton_Click(object sender, EventArgs e)
         {
             this.cleanProfileData();
             ViewModel.MatchSuggestion = new MatchSuggestion(this.r_FormLogin.LoggedInUser);
@@ -385,12 +385,12 @@ namespace DP_Targil1
             matchPictureBox.Visible = true;
             matchAboutLabel.Visible = true;
             percentLabel.Visible = true;
-            this.messageButton.Text = string.Format("Post a meesage on {0}'s wall",ViewModel.SelectedMatch.User.FirstName);
+            this.messageButton.Text = string.Format("Post a meesage on {0}'s wall", ViewModel.SelectedMatch.User.FirstName);
             this.matchPictureBox.LoadAsync(ViewModel.SelectedMatch.User.PictureNormalURL);
             profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
          //  new Thread(new ThreadStart(fetchAbout(ViewModel.SelectedMatch.User, this.matchAboutLabel));
-            fetchAbout(ViewModel.SelectedMatch.User, this.matchAboutLabel);
-            percentLabel.Text = string.Format("{0}%",ViewModel.SelectedMatch.MatchPercentage);
+            this.fetchAbout(ViewModel.SelectedMatch.User, this.matchAboutLabel);
+            percentLabel.Text = string.Format("{0}%", ViewModel.SelectedMatch.MatchPercentage);
         }
 
         private void displaySelectedMatch()

@@ -71,12 +71,9 @@ namespace DP_Targil1.Patterns.Builder
             }
         }
 
-
-
         public FacebookUser GetFacebookUser()
         {
             return FacebookUser;
         }
-
     }
 }

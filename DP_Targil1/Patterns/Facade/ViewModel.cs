@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Threading;
+using System;
 using System.ComponentModel.Design;
 using System.Windows.Forms;
 using System.Text;
@@ -6,18 +7,18 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
-using System.Threading;
-
 
 namespace DP_Targil1.Patterns.Facade
 {
     public static class ViewModel
     {
         public static MatchSuggestion MatchSuggestion { get; set; }
+
         public static FacebookUser SelectedMatch { get; set; }
+
         public static ImageSuggestion ImageSuggestion { get; set; }
 
-        public static void PostStatus(String i_Text)
+        public static void PostStatus(string i_Text)
         {
             try
             {
