@@ -7,7 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopFacebook", "DP_Targi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F1600150-40A0-4127-8659-4F5C944D2247}"
 	ProjectSection(SolutionItems) = preProject
-		A21 Ex01 May 315530022 Chen 207174970.docx = A21 Ex01 May 315530022 Chen 207174970.docx
 		..\..\Exercise Checking Report.txt = ..\..\Exercise Checking Report.txt
 	EndProjectSection
 EndProject
