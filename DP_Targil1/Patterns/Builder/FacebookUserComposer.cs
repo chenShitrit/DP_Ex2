@@ -10,19 +10,12 @@ namespace DP_Targil1.Patterns.Builder
     {
         public void Construct(IUserBuilder i_FBUserBuilder)
         {
-            i_FBUserBuilder.initGroups();
-            i_FBUserBuilder.initSchools();
-            i_FBUserBuilder.initJobs();
-            i_FBUserBuilder.initCity();
-            i_FBUserBuilder.initFriends();
-            i_FBUserBuilder.initAge();
-
-            //new Thread(i_FBUserBuilder.initFriends).Start();
-            //new Thread(i_FBUserBuilder.initGroups).Start();
-            //new Thread(i_FBUserBuilder.initSchools).Start();
-            //new Thread(i_FBUserBuilder.initJobs).Start();
-            //new Thread(i_FBUserBuilder.initCity).Start();
-            //new Thread(i_FBUserBuilder.initAge).Start();
+            i_FBUserBuilder.InitGroups();
+            i_FBUserBuilder.InitSchools();
+            i_FBUserBuilder.InitJobs();
+            i_FBUserBuilder.InitCity();
+            i_FBUserBuilder.InitFriends();
+            i_FBUserBuilder.InitAge();
         }
 
         public FacebookUser GetFacebookUser(IUserBuilder i_FBUserBuilder)

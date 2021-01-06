@@ -388,7 +388,6 @@ namespace DP_Targil1
             this.messageButton.Text = string.Format("Post a meesage on {0}'s wall", ViewModel.SelectedMatch.User.FirstName);
             this.matchPictureBox.LoadAsync(ViewModel.SelectedMatch.User.PictureNormalURL);
             profilePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-         //  new Thread(new ThreadStart(fetchAbout(ViewModel.SelectedMatch.User, this.matchAboutLabel));
             this.fetchAbout(ViewModel.SelectedMatch.User, this.matchAboutLabel);
             percentLabel.Text = string.Format("{0}%", ViewModel.SelectedMatch.MatchPercentage);
         }

@@ -9,17 +9,17 @@ namespace DP_Targil1.Patterns.Builder
 {
     public interface IUserBuilder
     {
-        void initAge();
+        void InitAge();
 
-        void initGroups();
+        void InitGroups();
 
-        void initFriends();
+        void InitFriends();
 
-        void initSchools();
+        void InitSchools();
 
-        void initJobs();
+        void InitJobs();
 
-        void initCity();
+        void InitCity();
 
         FacebookUser GetFacebookUser();
     }

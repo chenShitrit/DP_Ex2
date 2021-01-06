@@ -51,7 +51,7 @@ namespace DP_Targil1
                     foreach (Photo photo in album.Photos)
                     {
                         Photos.Add(photo);
-                        if (Photos.Count == 3) //TODO: without limit
+                        if (Photos.Count == 3)
                         {
                             return;
                         }

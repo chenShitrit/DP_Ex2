@@ -16,19 +16,19 @@ namespace DP_Targil1.Patterns.Builder
             FacebookUser = new FacebookUser(i_User);
         }
 
-        public void initAge()
+        public void InitAge()
         {
             int currYear = DateTime.Now.Year;
             int birthYear = int.Parse(FacebookUser.User.Birthday.Substring(6, 4));
             FacebookUser.Age = currYear - birthYear;
         }
 
-        public void initCity()
+        public void InitCity()
         {
             FacebookUser.City = FacebookUser.User.Hometown;
         }
 
-        public void initGroups()
+        public void InitGroups()
         {
             try
             {
@@ -40,12 +40,12 @@ namespace DP_Targil1.Patterns.Builder
             }
         }
 
-        public void initFriends()
+        public void InitFriends()
         {
             FacebookUser.FriendsCollection = FacebookUser.User.Friends;
         }
 
-        public void initSchools()
+        public void InitSchools()
         {
             FacebookUser.SchoolsCollection = new FacebookObjectCollection<Education>();
 
@@ -58,7 +58,7 @@ namespace DP_Targil1.Patterns.Builder
             }
         }
 
-        public void initJobs()
+        public void InitJobs()
         {
             FacebookUser.JobsCollection = new FacebookObjectCollection<WorkExperience>();
 
