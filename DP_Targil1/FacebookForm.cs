@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 using DP_Targil1.Patterns.Facade;
@@ -232,7 +233,15 @@ namespace DP_Targil1
         {
             if (this.radioButtonBlackAndWhiteFilter.Checked == true)
             {
-                ViewModel.ImageSuggestion.ColorMatrixStrategy = new blackAndWhiteFilterStrategy();
+                ViewModel.ImageSuggestion.ColorMatrixStrategyMethod = () => new ColorMatrix(
+                    new float[][]
+                        {
+                            new float[] { .3f, .3f, .3f, 0, 0 },
+                            new float[] { .59f, .59f, .59f, 0, 0 },
+                            new float[] { .11f, .11f, .11f, 0, 0 },
+                            new float[] { 0, 0, 0, 1, 0 },
+                            new float[] { 0, 0, 0, 0, 1 }
+                        });
                 PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter();
             }
         }
@@ -241,7 +250,15 @@ namespace DP_Targil1
         {
             if (this.radioButtonTransparencyFilter.Checked == true)
             {
-                ViewModel.ImageSuggestion.ColorMatrixStrategy = new TransparencyFilterStrategy();
+                ViewModel.ImageSuggestion.ColorMatrixStrategyMethod = () => new ColorMatrix(
+                    new float[][]
+                        {
+                            new float[] { 1, 0, 0, 0, 0 },
+                            new float[] { 0, 1, 0, 0, 0 },
+                            new float[] { 0, 0, 1, 0, 0 },
+                            new float[] { 0, 0, 0, 0.3f, 0 },
+                            new float[] { 0, 0, 0, 0, 1 }
+                        });
                 PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter();
             }
         }
@@ -250,7 +267,15 @@ namespace DP_Targil1
         {
             if (this.radioButtonSepiaFilter.Checked == true)
             {
-                ViewModel.ImageSuggestion.ColorMatrixStrategy = new SepiaFilterStrategy();
+                ViewModel.ImageSuggestion.ColorMatrixStrategyMethod = () => new ColorMatrix(
+                    new float[][]
+                        {
+                            new float[] { .393f, .349f, .272f, 0, 0 },
+                            new float[] { .769f, .686f, .534f, 0, 0 },
+                            new float[] { .189f, .168f, .131f, 0, 0 },
+                            new float[] { 0, 0, 0, 1, 0 },
+                            new float[] { 0, 0, 0, 0, 1 }
+                        });
                 PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter();
             }
         }

@@ -22,7 +22,7 @@ namespace DP_Targil1
 
         public FacebookObjectCollection<Album> AlbumsCollection { get; set; }
 
-        public IColorMatrixStrategy ColorMatrixStrategy { get; set; }
+        public Func<ColorMatrix> ColorMatrixStrategyMethod { get; set; }
 
         public List<Photo> Photos { get; set; }
 
@@ -96,7 +96,7 @@ namespace DP_Targil1
         {
             Bitmap newBmp = new Bitmap(SourcePhoto.ImageNormal.Width, SourcePhoto.ImageNormal.Height);
             Graphics graphics = Graphics.FromImage(newBmp);
-            ColorMatrix colorMatrix = ColorMatrixStrategy.CreateColorMatrix();
+            ColorMatrix colorMatrix = ColorMatrixStrategyMethod.Invoke();
             ImageAttributes img = new ImageAttributes();
             img.SetColorMatrix(colorMatrix);
             graphics.DrawImage(SourcePhoto.ImageNormal, new Rectangle(0, 0, SourcePhoto.ImageNormal.Width, SourcePhoto.ImageNormal.Height), 0, 0, SourcePhoto.ImageNormal.Width, SourcePhoto.ImageNormal.Height, GraphicsUnit.Pixel, img);
