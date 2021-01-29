@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppSettings.cs" />
-    <Compile Include="eFilter.cs" />
     <Compile Include="FacebookForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +60,10 @@
     <Compile Include="Patterns\Builder\IUserBuilder.cs" />
     <Compile Include="Patterns\Builder\FacebookUser.cs" />
     <Compile Include="Patterns\Facade\ViewModel.cs" />
+    <Compile Include="Patterns\Strategy\blackAndWhiteFilterStrategy.cs" />
+    <Compile Include="Patterns\Strategy\IColorMatrixStrategy.cs" />
+    <Compile Include="Patterns\Strategy\SepiaFilterStrategy.cs.cs" />
+    <Compile Include="Patterns\Strategy\TransparencyFilterStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

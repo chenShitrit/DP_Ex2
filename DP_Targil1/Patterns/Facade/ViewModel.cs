@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using DP_Targil1.Patterns.Strategy;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 

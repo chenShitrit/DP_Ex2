@@ -8,6 +8,7 @@ using System.Drawing.Drawing2D;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 using DP_Targil1.Patterns.Facade;
+using DP_Targil1.Patterns.Strategy;
 
 namespace DP_Targil1
 {
@@ -231,7 +232,8 @@ namespace DP_Targil1
         {
             if (this.radioButtonBlackAndWhiteFilter.Checked == true)
             {
-                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter(eFilter.BlackAndWhite);
+                ViewModel.ImageSuggestion.ColorMatrixStrategy = new blackAndWhiteFilterStrategy();
+                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter();
             }
         }
 
@@ -239,7 +241,8 @@ namespace DP_Targil1
         {
             if (this.radioButtonTransparencyFilter.Checked == true)
             {
-                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter(eFilter.Transparency);
+                ViewModel.ImageSuggestion.ColorMatrixStrategy = new TransparencyFilterStrategy();
+                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter();
             }
         }
 
@@ -247,7 +250,8 @@ namespace DP_Targil1
         {
             if (this.radioButtonSepiaFilter.Checked == true)
             {
-                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter(eFilter.Sepia);
+                ViewModel.ImageSuggestion.ColorMatrixStrategy = new SepiaFilterStrategy();
+                PictureBoxSuggests.Image = ViewModel.ImageSuggestion.SetFilter();
             }
         }
 

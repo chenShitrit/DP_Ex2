@@ -6,12 +6,14 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DP_Targil1.Patterns.Strategy;
 using FacebookWrapper.ObjectModel;
 
 namespace DP_Targil1
 {
     public class ImageSuggestion
     {
+
         private StringBuilder m_AboutString;
 
         public User User { get; set; }
@@ -19,6 +21,8 @@ namespace DP_Targil1
         public Photo SourcePhoto { get; set; }
 
         public FacebookObjectCollection<Album> AlbumsCollection { get; set; }
+
+        public IColorMatrixStrategy ColorMatrixStrategy { get; set; }
 
         public List<Photo> Photos { get; set; }
 
@@ -88,85 +92,17 @@ namespace DP_Targil1
             return m_AboutString.ToString();
         }
 
-        public Bitmap SetFilter(eFilter i_Filter)
+        public Bitmap SetFilter()
         {
             Bitmap newBmp = new Bitmap(SourcePhoto.ImageNormal.Width, SourcePhoto.ImageNormal.Height);
             Graphics graphics = Graphics.FromImage(newBmp);
-            ColorMatrix colorMatrix = null;
-
-            switch (i_Filter)
-            {
-                case eFilter.BlackAndWhite:
-                    {
-                        colorMatrix = blackAndWhiteFilter();
-                    }
-
-                    break;
-                case eFilter.Transparency:
-                    {
-                        colorMatrix = transparencyFilter();
-                    }
-
-                    break;
-                case eFilter.Sepia:
-                    {
-                        colorMatrix = sepiaFilter();
-                    }
-
-                    break;
-            }
-
+            ColorMatrix colorMatrix = ColorMatrixStrategy.CreateColorMatrix();
             ImageAttributes img = new ImageAttributes();
             img.SetColorMatrix(colorMatrix);
             graphics.DrawImage(SourcePhoto.ImageNormal, new Rectangle(0, 0, SourcePhoto.ImageNormal.Width, SourcePhoto.ImageNormal.Height), 0, 0, SourcePhoto.ImageNormal.Width, SourcePhoto.ImageNormal.Height, GraphicsUnit.Pixel, img);
             graphics.Dispose();
 
             return newBmp;
-        }
-
-        private ColorMatrix blackAndWhiteFilter()
-        {
-            ColorMatrix colorMatrix = new ColorMatrix(
-                new float[][]
-                    {
-                        new float[] { .3f, .3f, .3f, 0, 0 },
-                        new float[] { .59f, .59f, .59f, 0, 0 },
-                        new float[] { .11f, .11f, .11f, 0, 0 },
-                        new float[] { 0, 0, 0, 1, 0 },
-                        new float[] { 0, 0, 0, 0, 1 }
-                    });
-
-            return colorMatrix;
-        }
-
-        private ColorMatrix sepiaFilter()
-        {
-            ColorMatrix colorMatrix = new ColorMatrix(
-                new float[][]
-                    {
-                        new float[] { .393f, .349f, .272f, 0, 0 },
-                        new float[] { .769f, .686f, .534f, 0, 0 },
-                        new float[] { .189f, .168f, .131f, 0, 0 },
-                        new float[] { 0, 0, 0, 1, 0 },
-                        new float[] { 0, 0, 0, 0, 1 }
-                    });
-
-            return colorMatrix;
-        }
-
-        private ColorMatrix transparencyFilter()
-        {
-            ColorMatrix colorMatrix = new ColorMatrix(
-                new float[][]
-                    {
-                        new float[] { 1, 0, 0, 0, 0 },
-                        new float[] { 0, 1, 0, 0, 0 },
-                        new float[] { 0, 0, 1, 0, 0 },
-                        new float[] { 0, 0, 0, 0.3f, 0 },
-                        new float[] { 0, 0, 0, 0, 1 }
-                    });
-
-            return colorMatrix;
         }
 
         public byte[] ConvertImageToBytes(Image i_Image)
