@@ -51,7 +51,7 @@ namespace DP_Targil1
                     foreach (Photo photo in album.Photos)
                     {
                         Photos.Add(photo);
-                        if (Photos.Count == 3)
+                        if (Photos.Count == 20)
                         {
                             return;
                         }
@@ -60,42 +60,18 @@ namespace DP_Targil1
             }
         }
 
-        public void SortListPhotos(eSort i_Sort)
-        {
-            switch (i_Sort)
-            {
-                case eSort.ByLikes:
-                    {
-                        Photos.Sort(comparisonByLikes);
-                    }
 
-                    break;
-                case eSort.ByComments:
-                    {
-                        Photos.Sort(comparisonByComments);
-                    }
-
-                    break;
-                case eSort.ByLikesAndComments:
-                    {
-                        Photos.Sort(comparisonByLikesAndComments);
-                    }
-
-                    break;
-            }
-        }
-
-        private int comparisonByLikes(Photo i_Photo1, Photo i_Photo2)
+        public int comparisonByLikes(Photo i_Photo1, Photo i_Photo2)
         {
             return i_Photo2.LikedBy.Count.CompareTo(i_Photo1.LikedBy.Count);
         }
 
-        private int comparisonByComments(Photo i_Photo1, Photo i_Photo2)
+        public int comparisonByComments(Photo i_Photo1, Photo i_Photo2)
         {
             return i_Photo2.Comments.Count.CompareTo(i_Photo1.Comments.Count);
         }
 
-        private int comparisonByLikesAndComments(Photo i_Photo1, Photo i_Photo2)
+        public int comparisonByLikesAndComments(Photo i_Photo1, Photo i_Photo2)
         {
             return (i_Photo2.Comments.Count * i_Photo2.LikedBy.Count).CompareTo(i_Photo1.Comments.Count * i_Photo1.LikedBy.Count);
         }

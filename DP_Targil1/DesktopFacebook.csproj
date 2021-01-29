@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="AppSettings.cs" />
     <Compile Include="eFilter.cs" />
-    <Compile Include="eSort.cs" />
     <Compile Include="FacebookForm.cs">
       <SubType>Form</SubType>
     </Compile>

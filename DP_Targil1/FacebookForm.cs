@@ -261,7 +261,7 @@ namespace DP_Targil1
         {
             this.setDefaultLink();
             linkLabelByLikes.LinkColor = Color.Gray;
-            ViewModel.ImageSuggestion.SortListPhotos(eSort.ByLikes);
+            ViewModel.ImageSuggestion.Photos.Sort(ViewModel.ImageSuggestion.comparisonByLikes);
             linkLabelByLikes.Enabled = false;
             this.loadToListBoxPhotos();
         }
@@ -270,7 +270,7 @@ namespace DP_Targil1
         {
             this.setDefaultLink();
             linkLabelByComments.LinkColor = Color.Gray;
-            ViewModel.ImageSuggestion.SortListPhotos(eSort.ByComments);
+            ViewModel.ImageSuggestion.Photos.Sort(ViewModel.ImageSuggestion.comparisonByComments);
             linkLabelByComments.Enabled = false;
             this.loadToListBoxPhotos();
         }
@@ -279,7 +279,7 @@ namespace DP_Targil1
         {
             this.setDefaultLink();
             linkLabelLikesAndComments.LinkColor = Color.Gray;
-            ViewModel.ImageSuggestion.SortListPhotos(eSort.ByLikesAndComments);
+            ViewModel.ImageSuggestion.Photos.Sort(ViewModel.ImageSuggestion.comparisonByLikesAndComments);
             linkLabelLikesAndComments.Enabled = false;
             this.loadToListBoxPhotos();
         }
@@ -297,7 +297,7 @@ namespace DP_Targil1
             linkLabelByLikes.Visible = true;
             linkLabelLikesAndComments.Enabled = false;
             labelDetails.Visible = true;
-            ViewModel.ImageSuggestion.SortListPhotos(eSort.ByLikesAndComments);
+            ViewModel.ImageSuggestion.Photos.Sort(ViewModel.ImageSuggestion.comparisonByLikesAndComments);
 
             this.loadToListBoxPhotos();
         }
