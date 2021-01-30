@@ -6,7 +6,6 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using DP_Targil1.Patterns.Strategy;
 using FacebookWrapper.ObjectModel;
 
 namespace DP_Targil1

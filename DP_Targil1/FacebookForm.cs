@@ -9,7 +9,6 @@ using System.Drawing.Imaging;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 using DP_Targil1.Patterns.Facade;
-using DP_Targil1.Patterns.Strategy;
 
 namespace DP_Targil1
 {
