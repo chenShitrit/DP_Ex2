@@ -47,6 +47,7 @@
     <Compile Include="FacebookForm.Designer.cs">
       <DependentUpon>FacebookForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patterns\Iterator\MatchIterator.cs" />
     <Compile Include="Patterns\Singleton\FormLoginSingleton.cs">
       <SubType>Form</SubType>
     </Compile>
