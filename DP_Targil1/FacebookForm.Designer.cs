@@ -58,6 +58,7 @@ namespace DP_Targil1
             this.coverPictureBox = new System.Windows.Forms.PictureBox();
             this.friendsListBox = new System.Windows.Forms.ListBox();
             this.matchPeopleTabPage = new System.Windows.Forms.TabPage();
+            this.CheckBoxShowMatchesWithPhotos = new System.Windows.Forms.CheckBox();
             this.matcPeopleListBox = new System.Windows.Forms.ListBox();
             this.SuggestMeMatchingButtom = new System.Windows.Forms.Button();
             this.genderTextBox = new System.Windows.Forms.TextBox();
@@ -422,6 +423,7 @@ namespace DP_Targil1
             // 
             this.matchPeopleTabPage.BackColor = System.Drawing.Color.LightBlue;
             this.matchPeopleTabPage.BackgroundImage = global::DP_Targil1.Properties.Resources.love;
+            this.matchPeopleTabPage.Controls.Add(this.CheckBoxShowMatchesWithPhotos);
             this.matchPeopleTabPage.Controls.Add(this.matcPeopleListBox);
             this.matchPeopleTabPage.Controls.Add(this.SuggestMeMatchingButtom);
             this.matchPeopleTabPage.Controls.Add(this.genderTextBox);
@@ -447,6 +449,19 @@ namespace DP_Targil1
             this.matchPeopleTabPage.Size = new System.Drawing.Size(929, 658);
             this.matchPeopleTabPage.TabIndex = 2;
             this.matchPeopleTabPage.Text = "Matching Suggestion";
+            // 
+            // CheckBoxShowMatchesWithPhotos
+            // 
+            this.CheckBoxShowMatchesWithPhotos.AutoSize = true;
+            this.CheckBoxShowMatchesWithPhotos.BackColor = System.Drawing.Color.Transparent;
+            this.CheckBoxShowMatchesWithPhotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.CheckBoxShowMatchesWithPhotos.Location = new System.Drawing.Point(86, 205);
+            this.CheckBoxShowMatchesWithPhotos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CheckBoxShowMatchesWithPhotos.Name = "CheckBoxShowMatchesWithPhotos";
+            this.CheckBoxShowMatchesWithPhotos.Size = new System.Drawing.Size(215, 22);
+            this.CheckBoxShowMatchesWithPhotos.TabIndex = 92;
+            this.CheckBoxShowMatchesWithPhotos.Text = "Show Matches With Photos";
+            this.CheckBoxShowMatchesWithPhotos.UseVisualStyleBackColor = false;
             // 
             // matcPeopleListBox
             // 
@@ -970,6 +985,7 @@ namespace DP_Targil1
         private TextBox messageTextBox;
         private BindingSource albumBindingSource;
         private PictureBox imageAlbumPictureBox;
+        private CheckBox CheckBoxShowMatchesWithPhotos;
 
         public Label LabelAboutThePhoto
         {

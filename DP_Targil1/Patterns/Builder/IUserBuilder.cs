@@ -21,6 +21,8 @@ namespace DP_Targil1.Patterns.Builder
 
         void InitCity();
 
+        void InitCountOfAlbums();
+
         FacebookUser GetFacebookUser();
     }
 }

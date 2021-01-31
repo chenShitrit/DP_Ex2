@@ -23,6 +23,11 @@ namespace DP_Targil1.Patterns.Builder
             FacebookUser.Age = currYear - birthYear;
         }
 
+        public void InitCountOfAlbums()
+        {
+            FacebookUser.CountOfAlbums = FacebookUser.User.Albums.Count;
+        }
+
         public void InitCity()
         {
             FacebookUser.City = FacebookUser.User.Hometown;

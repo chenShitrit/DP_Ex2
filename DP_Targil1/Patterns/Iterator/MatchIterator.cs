@@ -8,9 +8,8 @@ using DP_Targil1.Patterns.Builder;
 
 namespace DP_Targil1.Patterns.Iterator
 {
-    class MatchIterator
+    public class MatchIterator
     {
-
         public delegate FacebookUser BuilderDelegate(User i_User, FacebookUserComposer i_Composer);
 
         private SortedList<string, FacebookUser> m_MatchPersons = new SortedList<string, FacebookUser>();
@@ -19,7 +18,6 @@ namespace DP_Targil1.Patterns.Iterator
         {
             m_MatchPersons = i_MatchPersons;
         }
-
 
         public void InitMatches(FacebookObjectCollection<User> i_Users, FacebookUser i_CurrUser)
         {
@@ -34,12 +32,10 @@ namespace DP_Targil1.Patterns.Iterator
                         {
                             m_MatchPersons.Add(iterator.Current.User.Id, iterator.Current);
                         }
-
                     }
                 }
             }
         }
-
 
         public IEnumerator<FacebookUser> GetEnumerator(BuilderDelegate func, FacebookUserComposer i_Composer, FacebookObjectCollection<User> i_Users)
         {
@@ -58,6 +54,3 @@ namespace DP_Targil1.Patterns.Iterator
         }
     }
 }
-
-
-

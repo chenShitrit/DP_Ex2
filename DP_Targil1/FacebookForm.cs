@@ -6,6 +6,7 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
+using DP_Targil1.Patterns.Decorator;
 using FacebookWrapper;
 using FacebookWrapper.ObjectModel;
 using DP_Targil1.Patterns.Facade;
@@ -185,7 +186,7 @@ namespace DP_Targil1
         {
             this.setDefaultLink();
             friendsListBox.Visible = true;
-            friendsLinkLabel.LinkColor = Color.Gray;
+            this.friendsLinkLabel.LinkColor = Color.Gray;
             new Thread(this.fetchFriends).Start();
         }
 
@@ -379,17 +380,34 @@ namespace DP_Targil1
             {
                 filteredToAge = int.Parse(this.toAgeTextBox.Text);
             }
-           
-            ViewModel.MatchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
 
-            foreach (FacebookUser matchedPeople in ViewModel.MatchSuggestion.TopMatchedUsers)
+            if (CheckBoxShowMatchesWithPhotos.Checked == true)
             {
-                matcPeopleListBox.Items.Add(matchedPeople);
+                MatchSuggestionWithAlbums matchSuggestion = new MatchSuggestionWithAlbums(ViewModel.MatchSuggestion, this.r_FormLogin.LoggedInUser);
+                matchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
+                foreach (FacebookUser matchedPeople in matchSuggestion.TopMatchedUsers)
+                {
+                    matcPeopleListBox.Items.Add(matchedPeople);
+                }
+
+                if (matchSuggestion.TopMatchedUsers.Count == 0)
+                {
+                    MessageBox.Show("No Match to retrieve");
+                }
             }
 
-            if (ViewModel.MatchSuggestion.TopMatchedUsers.Count == 0)
+            if(CheckBoxShowMatchesWithPhotos.Checked == false)
             {
-                MessageBox.Show("No Match to retrieve");
+                ViewModel.MatchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
+                foreach (FacebookUser matchedPeople in ViewModel.MatchSuggestion.TopMatchedUsers)
+                {
+                    matcPeopleListBox.Items.Add(matchedPeople);
+                }
+
+                if (ViewModel.MatchSuggestion.TopMatchedUsers.Count == 0)
+                {
+                    MessageBox.Show("No Match to retrieve");
+                }
             }
         }
 

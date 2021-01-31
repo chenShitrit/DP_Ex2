@@ -12,7 +12,6 @@ namespace DP_Targil1
 {
     public class ImageSuggestion
     {
-
         private StringBuilder m_AboutString;
 
         public User User { get; set; }
@@ -36,7 +35,6 @@ namespace DP_Targil1
         private void initAlbums()
         {
              AlbumsCollection = new FacebookObjectCollection<Album>();
-             
              foreach (Album album in User.Albums)
              {
                   AlbumsCollection.Add(album);
@@ -62,7 +60,6 @@ namespace DP_Targil1
                 }
             }
         }
-
 
         public int comparisonByLikes(Photo i_Photo1, Photo i_Photo2)
         {

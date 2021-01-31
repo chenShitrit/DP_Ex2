@@ -15,6 +15,8 @@ namespace DP_Targil1
 
         public int Age { get; set; }
 
+        public int CountOfAlbums { get; set; }
+
         public City City { get; set; }
 
         public FacebookObjectCollection<Group> GroupsCollection { get; set; }

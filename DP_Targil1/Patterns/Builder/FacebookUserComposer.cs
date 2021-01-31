@@ -16,6 +16,7 @@ namespace DP_Targil1.Patterns.Builder
             i_FBUserBuilder.InitCity();
             i_FBUserBuilder.InitFriends();
             i_FBUserBuilder.InitAge();
+            i_FBUserBuilder.InitCountOfAlbums();
         }
 
         public FacebookUser GetFacebookUser(IUserBuilder i_FBUserBuilder)

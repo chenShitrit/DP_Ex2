@@ -5,18 +5,22 @@ using System.Linq;
 using System.Text;
 using FacebookWrapper.ObjectModel;
 using DP_Targil1.Patterns.Builder;
+using DP_Targil1.Patterns.Decorator;
 using DP_Targil1.Patterns.Iterator;
 using FacebookWrapper;
 
 namespace DP_Targil1
 {
-    public class MatchSuggestion
+    public class MatchSuggestion : IMatchSuggestion
     {
         private const int k_NoMatchPercentage = 0;
         private const int k_Params = 5;
         private FacebookUser m_CurrentUser;
-        private List<FacebookUser> m_TopMatchedUsers = new List<FacebookUser>();
-        private SortedList<string, FacebookUser> m_MatchPersons = new SortedList<string, FacebookUser>();
+
+        public List<FacebookUser> TopMatchedUsers { get; set; }
+
+        public SortedList<string, FacebookUser> MatchPersons { get; set; }
+
         private MatchIterator m_MatchIterator;
 
         public MatchSuggestion(User i_LoggedInUser)
@@ -24,17 +28,11 @@ namespace DP_Targil1
             FacebookUserComposer facebookUserComposer = new FacebookUserComposer();
             IUserBuilder userBuilder = new FacebookUserBuilder(i_LoggedInUser);
             facebookUserComposer.Construct(userBuilder);
+            MatchPersons = new SortedList<string, FacebookUser>();
+            TopMatchedUsers = new List<FacebookUser>();
             m_CurrentUser = facebookUserComposer.GetFacebookUser(userBuilder);
-            m_MatchIterator = new MatchIterator(m_MatchPersons);    
+            m_MatchIterator = new MatchIterator(MatchPersons);    
             InitMatchPersons();
-        }
-
-        public List<FacebookUser> TopMatchedUsers
-        {
-            get
-            {
-                return m_TopMatchedUsers;
-            }
         }
 
         public void InitMatchPersons()
@@ -45,7 +43,7 @@ namespace DP_Targil1
             }
         }
 
-        private bool isMatching(FacebookUser i_User, string i_Gender, int i_FromAge, int i_ToAge, string i_Hometown)
+        public bool IsMatching(FacebookUser i_User, string i_Gender, int i_FromAge, int i_ToAge, string i_Hometown)
         {
             bool isMatching = false;
             if (i_User.User.Gender == null && i_Gender != null)
@@ -68,15 +66,15 @@ namespace DP_Targil1
 
         public void CheckPersonMatch(string i_Gender, int i_FromAge, int i_ToAge, string i_Hometown)
         {
-            foreach (KeyValuePair<string, FacebookUser> matchPerson in m_MatchPersons)
+            foreach (KeyValuePair<string, FacebookUser> matchPerson in MatchPersons)
             {
-                if (isSingle(matchPerson))
+                if (IsSingle(matchPerson))
                 {
-                    if (isMatching(matchPerson.Value, i_Gender, i_FromAge, i_ToAge, i_Hometown))
+                    if (IsMatching(matchPerson.Value, i_Gender, i_FromAge, i_ToAge, i_Hometown))
                     {
-                        checkMatchingPercentage(matchPerson);
+                        CheckMatchingPercentage(matchPerson);
                         {
-                            m_TopMatchedUsers.Add(matchPerson.Value);
+                            TopMatchedUsers.Add(matchPerson.Value);
                         }
 
                         matchPerson.Value.MatchPercentage += 100 / k_Params;
@@ -91,7 +89,7 @@ namespace DP_Targil1
 
         private void sortMatchingList()
         {
-            m_TopMatchedUsers.Sort(comparisonByPercent);
+            TopMatchedUsers.Sort(comparisonByPercent);
         }
 
         private int comparisonByPercent(FacebookUser i_UserData1, FacebookUser i_UserData2)
@@ -99,7 +97,7 @@ namespace DP_Targil1
             return i_UserData2.MatchPercentage.CompareTo(i_UserData1.MatchPercentage);
         }
 
-        private void checkMatchingPercentage(KeyValuePair<string, FacebookUser> i_User)
+        public void CheckMatchingPercentage(KeyValuePair<string, FacebookUser> i_User)
         {
             new Thread(checkCityMatch).Start();
             new Thread(checkSchoolMatch).Start();
@@ -109,7 +107,7 @@ namespace DP_Targil1
 
         private void checkSchoolMatch()
         {
-            foreach (KeyValuePair<string, FacebookUser> matchPerson in m_MatchPersons)
+            foreach (KeyValuePair<string, FacebookUser> matchPerson in MatchPersons)
             {
                 if (matchPerson.Value.SchoolsCollection.Count != 0 && m_CurrentUser.SchoolsCollection.Count != 0)
                 {
@@ -123,7 +121,7 @@ namespace DP_Targil1
 
         private void checkCityMatch()
         {
-            foreach (KeyValuePair<string, FacebookUser> matchPerson in m_MatchPersons)
+            foreach (KeyValuePair<string, FacebookUser> matchPerson in MatchPersons)
             {
                 if (matchPerson.Value.City != null && m_CurrentUser.City != null)
                 {
@@ -137,7 +135,7 @@ namespace DP_Targil1
 
         private void checkJobsMatch()
         {
-            foreach (KeyValuePair<string, FacebookUser> matchPerson in m_MatchPersons)
+            foreach (KeyValuePair<string, FacebookUser> matchPerson in MatchPersons)
             {
                 if (matchPerson.Value.JobsCollection.Count != 0 && m_CurrentUser.JobsCollection.Count != 0)
                 {
@@ -151,7 +149,7 @@ namespace DP_Targil1
 
         private void checkGroupsMatch()
         {
-            foreach (KeyValuePair<string, FacebookUser> matchPerson in m_MatchPersons)
+            foreach (KeyValuePair<string, FacebookUser> matchPerson in MatchPersons)
             {
                 if (matchPerson.Value.GroupsCollection != null && m_CurrentUser.GroupsCollection != null)
                 {
@@ -169,7 +167,7 @@ namespace DP_Targil1
             }
         }
 
-        private bool isSingle(KeyValuePair<string, FacebookUser> i_User)
+        public bool IsSingle(KeyValuePair<string, FacebookUser> i_User)
         {
             return i_User.Value.User.RelationshipStatus == User.eRelationshipStatus.Single || i_User.Value.User.RelationshipStatus == User.eRelationshipStatus.None;
         }
