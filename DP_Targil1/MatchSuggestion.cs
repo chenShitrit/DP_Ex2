@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using FacebookWrapper.ObjectModel;
 using DP_Targil1.Patterns.Builder;
+using DP_Targil1.Patterns.Iterator;
 using FacebookWrapper;
 
 namespace DP_Targil1
@@ -16,6 +17,7 @@ namespace DP_Targil1
         private FacebookUser m_CurrentUser;
         private List<FacebookUser> m_TopMatchedUsers = new List<FacebookUser>();
         private SortedList<string, FacebookUser> m_MatchPersons = new SortedList<string, FacebookUser>();
+        private MatchIterator m_MatchIterator;
 
         public MatchSuggestion(User i_LoggedInUser)
         {
@@ -23,6 +25,7 @@ namespace DP_Targil1
             IUserBuilder userBuilder = new FacebookUserBuilder(i_LoggedInUser);
             facebookUserComposer.Construct(userBuilder);
             m_CurrentUser = facebookUserComposer.GetFacebookUser(userBuilder);
+            m_MatchIterator = new MatchIterator(m_MatchPersons);    
             InitMatchPersons();
         }
 
@@ -38,19 +41,7 @@ namespace DP_Targil1
         {
             foreach (User myFriend in m_CurrentUser.FriendsCollection)
             {
-                foreach (User matchPerson in myFriend.Friends)
-                {
-                    if (matchPerson.Id != m_CurrentUser.User.Id)
-                    {
-                        if (!m_MatchPersons.ContainsKey(matchPerson.Id))
-                        {
-                            FacebookUserComposer facebookUserComposer = new FacebookUserComposer();
-                            IUserBuilder userBuilder = new FacebookUserBuilder(matchPerson);
-                            facebookUserComposer.Construct(userBuilder);
-                            m_MatchPersons.Add(matchPerson.Id, facebookUserComposer.GetFacebookUser(userBuilder));
-                        }
-                    }
-                }
+                m_MatchIterator.InitMatches(myFriend.Friends, m_CurrentUser);
             }
         }
 
