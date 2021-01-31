@@ -22,7 +22,7 @@ namespace DP_Targil1.Patterns.Iterator
         public void InitMatches(FacebookObjectCollection<User> i_Users, FacebookUser i_CurrUser)
         {
             FacebookUserComposer facebookUserComposer = new FacebookUserComposer();
-            using (IEnumerator<FacebookUser> iterator = GetEnumerator(friendBuilder, facebookUserComposer, i_Users))
+            using (IEnumerator<FacebookUser> iterator = GetEnumerator(matchBuilder, facebookUserComposer, i_Users))
             {
                 while (iterator.MoveNext())
                 {
@@ -46,7 +46,7 @@ namespace DP_Targil1.Patterns.Iterator
             }
         }
 
-        private FacebookUser friendBuilder(User i_User, FacebookUserComposer i_FBUserComposer)
+        private FacebookUser matchBuilder(User i_User, FacebookUserComposer i_FBUserComposer)
         {
             IUserBuilder userBuilder = new FacebookUserBuilder(i_User);
             i_FBUserComposer.Construct(userBuilder);
