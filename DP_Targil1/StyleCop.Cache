@@ -214,259 +214,6 @@
   <project key="1373221399">
     <configuration>DEBUG;TRACE</configuration>
   </project>
-  <sourcecode name="AppSettings.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 11:32:35.672</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="IMatchSuggestion.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 13:59:48.250</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="ViewModel.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 13:09:09.370</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="Program.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 11:32:35.688</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="Resources.Designer.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 11:32:35.688</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="FormLoginSingleton.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 11:32:35.688</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="FormLoginSingleton.Designer.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 11:32:35.688</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="ImageSuggestion.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 14:14:55.315</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="MatchSuggestionDecorator.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 14:15:58.271</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="MatchIterator.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 14:15:58.282</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="MatchSuggestion.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 14:22:18.683</sourceFile>
-      <parser>2020/08/10 21:30:53.244</parser>
-      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
   <sourcecode name="MatchSuggestionWithPhoto.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020/08/10 21:30:53.244</styleCop>
@@ -490,11 +237,86 @@
     </timestamps>
     <violations />
   </sourcecode>
+  <project key="1246268587">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="1715940430">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="AppSettings.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.529</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ImageSuggestion.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.533</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="MatchSuggestion.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 20:26:16.385</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
   <sourcecode name="FacebookUser.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 14:59:06.000</sourceFile>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.534</sourceFile>
       <parser>2020/08/10 21:30:53.244</parser>
       <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -516,8 +338,8 @@
   <sourcecode name="FacebookUserBuilder.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 14:59:05.992</sourceFile>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.535</sourceFile>
       <parser>2020/08/10 21:30:53.244</parser>
       <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -539,8 +361,8 @@
   <sourcecode name="FacebookUserComposer.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 14:59:05.982</sourceFile>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.535</sourceFile>
       <parser>2020/08/10 21:30:53.244</parser>
       <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -562,8 +384,8 @@
   <sourcecode name="IUserBuilder.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 14:59:05.973</sourceFile>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.535</sourceFile>
       <parser>2020/08/10 21:30:53.244</parser>
       <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -581,12 +403,131 @@
       <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
     </timestamps>
     <violations />
+  </sourcecode>
+  <sourcecode name="IMatchSuggestion.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 20:19:53.237</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="SingleLineCommentsMustNotBeFollowedByBlankLine" ruleCheckId="SA1512">
+        <context>A single-line comment must not be followed by a blank line. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>10</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
+        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>10</line>
+        <index>190</index>
+        <endIndex>239</endIndex>
+        <startLine>10</startLine>
+        <startColumn>9</startColumn>
+        <endLine>10</endLine>
+        <endColumn>58</endColumn>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="MatchSuggestionDecorator.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 21:09:36.239</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainMultipleBlankLinesInARow" ruleCheckId="SA1507">
+        <context>The code must not contain multiple blank lines in a row.</context>
+        <line>13</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
+        <context>Adjacent elements must be separated by a blank line.</context>
+        <line>11</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
   </sourcecode>
   <sourcecode name="MatchSuggestionWithAlbums.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 15:05:15.365</sourceFile>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 21:09:36.247</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="SingleLineCommentMustBePrecededByBlankLine" ruleCheckId="SA1515">
+        <context>A single-line comment must be preceded by a blank line or another single-line comment, or must be the first item in its scope. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>14</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="SingleLineCommentsMustNotBeFollowedByBlankLine" ruleCheckId="SA1512">
+        <context>A single-line comment must not be followed by a blank line. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>14</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
+        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>14</line>
+        <index>387</index>
+        <endIndex>445</endIndex>
+        <startLine>14</startLine>
+        <startColumn>7</startColumn>
+        <endLine>14</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="ViewModel.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:51:44.894</sourceFile>
       <parser>2020/08/10 21:30:53.244</parser>
       <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -604,12 +545,1452 @@
       <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
     </timestamps>
     <violations />
+  </sourcecode>
+  <sourcecode name="MatchIterator.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.538</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Program.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.540</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Resources.Designer.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.541</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="FacebookForm.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 20:59:26.476</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to profilePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>63</line>
+        <index>1834</index>
+        <endIndex>1850</endIndex>
+        <startLine>63</startLine>
+        <startColumn>13</startColumn>
+        <endLine>63</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to profilePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>64</line>
+        <index>1924</index>
+        <endIndex>1940</endIndex>
+        <startLine>64</startLine>
+        <startColumn>13</startColumn>
+        <endLine>64</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to userNameLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>79</line>
+        <index>2501</index>
+        <endIndex>2513</endIndex>
+        <startLine>79</startLine>
+        <startColumn>13</startColumn>
+        <endLine>79</endLine>
+        <endColumn>25</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to userNameLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>79</line>
+        <index>2539</index>
+        <endIndex>2551</endIndex>
+        <startLine>79</startLine>
+        <startColumn>51</startColumn>
+        <endLine>79</endLine>
+        <endColumn>63</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to postStatusTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>82</line>
+        <index>2694</index>
+        <endIndex>2710</endIndex>
+        <startLine>82</startLine>
+        <startColumn>17</startColumn>
+        <endLine>82</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to postStatusTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>82</line>
+        <index>2736</index>
+        <endIndex>2752</endIndex>
+        <startLine>82</startLine>
+        <startColumn>59</startColumn>
+        <endLine>82</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to coverPictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>89</line>
+        <index>3009</index>
+        <endIndex>3023</endIndex>
+        <startLine>89</startLine>
+        <startColumn>21</startColumn>
+        <endLine>89</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to coverPictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>90</line>
+        <index>3080</index>
+        <endIndex>3094</endIndex>
+        <startLine>90</startLine>
+        <startColumn>21</startColumn>
+        <endLine>90</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to profilePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>100</line>
+        <index>3488</index>
+        <endIndex>3504</endIndex>
+        <startLine>100</startLine>
+        <startColumn>52</startColumn>
+        <endLine>100</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to profilePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>100</line>
+        <index>3513</index>
+        <endIndex>3529</endIndex>
+        <startLine>100</startLine>
+        <startColumn>77</startColumn>
+        <endLine>100</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to profilePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>101</line>
+        <index>3553</index>
+        <endIndex>3569</endIndex>
+        <startLine>101</startLine>
+        <startColumn>13</startColumn>
+        <endLine>101</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to PictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>102</line>
+        <index>3683</index>
+        <endIndex>3700</endIndex>
+        <startLine>102</startLine>
+        <startColumn>53</startColumn>
+        <endLine>102</endLine>
+        <endColumn>70</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to PictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>102</line>
+        <index>3709</index>
+        <endIndex>3726</endIndex>
+        <startLine>102</startLine>
+        <startColumn>79</startColumn>
+        <endLine>102</endLine>
+        <endColumn>96</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to PictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>103</line>
+        <index>3750</index>
+        <endIndex>3767</endIndex>
+        <startLine>103</startLine>
+        <startColumn>13</startColumn>
+        <endLine>103</endLine>
+        <endColumn>30</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkPosts must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>110</line>
+        <index>4046</index>
+        <endIndex>4054</endIndex>
+        <startLine>110</startLine>
+        <startColumn>13</startColumn>
+        <endLine>110</endLine>
+        <endColumn>21</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to listBoxPosts must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>116</line>
+        <index>4184</index>
+        <endIndex>4195</endIndex>
+        <startLine>116</startLine>
+        <startColumn>13</startColumn>
+        <endLine>116</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to listBoxPosts must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>116</line>
+        <index>4221</index>
+        <endIndex>4232</endIndex>
+        <startLine>116</startLine>
+        <startColumn>50</startColumn>
+        <endLine>116</endLine>
+        <endColumn>61</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to messageTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>117</line>
+        <index>4265</index>
+        <endIndex>4278</endIndex>
+        <startLine>117</startLine>
+        <startColumn>13</startColumn>
+        <endLine>117</endLine>
+        <endColumn>26</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to messageTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>117</line>
+        <index>4304</index>
+        <endIndex>4317</endIndex>
+        <startLine>117</startLine>
+        <startColumn>52</startColumn>
+        <endLine>117</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to postBindingSource must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>118</line>
+        <index>4350</index>
+        <endIndex>4366</endIndex>
+        <startLine>118</startLine>
+        <startColumn>13</startColumn>
+        <endLine>118</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to listBoxAlbums must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>124</line>
+        <index>4596</index>
+        <endIndex>4608</endIndex>
+        <startLine>124</startLine>
+        <startColumn>13</startColumn>
+        <endLine>124</endLine>
+        <endColumn>25</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to AlbumsLink must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>125</line>
+        <index>4639</index>
+        <endIndex>4648</endIndex>
+        <startLine>125</startLine>
+        <startColumn>13</startColumn>
+        <endLine>125</endLine>
+        <endColumn>22</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to imageAlbumPictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>132</line>
+        <index>4800</index>
+        <endIndex>4819</endIndex>
+        <startLine>132</startLine>
+        <startColumn>13</startColumn>
+        <endLine>132</endLine>
+        <endColumn>32</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to imageAlbumPictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>132</line>
+        <index>4845</index>
+        <endIndex>4864</endIndex>
+        <startLine>132</startLine>
+        <startColumn>58</startColumn>
+        <endLine>132</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to albumBindingSource must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>133</line>
+        <index>4897</index>
+        <endIndex>4914</endIndex>
+        <startLine>133</startLine>
+        <startColumn>13</startColumn>
+        <endLine>133</endLine>
+        <endColumn>30</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to aboutMeLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>154</line>
+        <index>5814</index>
+        <endIndex>5825</endIndex>
+        <startLine>154</startLine>
+        <startColumn>13</startColumn>
+        <endLine>154</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to aboutLinkLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>155</line>
+        <index>5856</index>
+        <endIndex>5869</endIndex>
+        <startLine>155</startLine>
+        <startColumn>13</startColumn>
+        <endLine>155</endLine>
+        <endColumn>26</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to aboutLinkLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>161</line>
+        <index>6049</index>
+        <endIndex>6062</endIndex>
+        <startLine>161</startLine>
+        <startColumn>13</startColumn>
+        <endLine>161</endLine>
+        <endColumn>26</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsLinkLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>162</line>
+        <index>6101</index>
+        <endIndex>6116</endIndex>
+        <startLine>162</startLine>
+        <startColumn>13</startColumn>
+        <endLine>162</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to AlbumsLink must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>163</line>
+        <index>6155</index>
+        <endIndex>6164</endIndex>
+        <startLine>163</startLine>
+        <startColumn>13</startColumn>
+        <endLine>163</endLine>
+        <endColumn>22</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkPosts must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>164</line>
+        <index>6203</index>
+        <endIndex>6211</endIndex>
+        <startLine>164</startLine>
+        <startColumn>13</startColumn>
+        <endLine>164</endLine>
+        <endColumn>21</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByLikes must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>165</line>
+        <index>6250</index>
+        <endIndex>6265</endIndex>
+        <startLine>165</startLine>
+        <startColumn>13</startColumn>
+        <endLine>165</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>166</line>
+        <index>6304</index>
+        <endIndex>6322</endIndex>
+        <startLine>166</startLine>
+        <startColumn>13</startColumn>
+        <endLine>166</endLine>
+        <endColumn>31</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelLikesAndComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>167</line>
+        <index>6361</index>
+        <endIndex>6385</endIndex>
+        <startLine>167</startLine>
+        <startColumn>13</startColumn>
+        <endLine>167</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to listBoxPosts must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>168</line>
+        <index>6424</index>
+        <endIndex>6435</endIndex>
+        <startLine>168</startLine>
+        <startColumn>13</startColumn>
+        <endLine>168</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to messageTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>169</line>
+        <index>6467</index>
+        <endIndex>6480</endIndex>
+        <startLine>169</startLine>
+        <startColumn>13</startColumn>
+        <endLine>169</endLine>
+        <endColumn>26</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to listBoxAlbums must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>170</line>
+        <index>6512</index>
+        <endIndex>6524</endIndex>
+        <startLine>170</startLine>
+        <startColumn>13</startColumn>
+        <endLine>170</endLine>
+        <endColumn>25</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>171</line>
+        <index>6556</index>
+        <endIndex>6569</endIndex>
+        <startLine>171</startLine>
+        <startColumn>13</startColumn>
+        <endLine>171</endLine>
+        <endColumn>26</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to aboutLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>172</line>
+        <index>6601</index>
+        <endIndex>6610</endIndex>
+        <startLine>172</startLine>
+        <startColumn>13</startColumn>
+        <endLine>172</endLine>
+        <endColumn>22</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to imageAlbumPictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>173</line>
+        <index>6642</index>
+        <endIndex>6661</endIndex>
+        <startLine>173</startLine>
+        <startColumn>13</startColumn>
+        <endLine>173</endLine>
+        <endColumn>32</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to aboutMeLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>174</line>
+        <index>6693</index>
+        <endIndex>6704</endIndex>
+        <startLine>174</startLine>
+        <startColumn>13</startColumn>
+        <endLine>174</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByLikes must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>175</line>
+        <index>6736</index>
+        <endIndex>6751</endIndex>
+        <startLine>175</startLine>
+        <startColumn>13</startColumn>
+        <endLine>175</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>176</line>
+        <index>6782</index>
+        <endIndex>6800</endIndex>
+        <startLine>176</startLine>
+        <startColumn>13</startColumn>
+        <endLine>176</endLine>
+        <endColumn>31</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelLikesAndComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>177</line>
+        <index>6831</index>
+        <endIndex>6855</endIndex>
+        <startLine>177</startLine>
+        <startColumn>13</startColumn>
+        <endLine>177</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>188</line>
+        <index>7197</index>
+        <endIndex>7210</endIndex>
+        <startLine>188</startLine>
+        <startColumn>13</startColumn>
+        <endLine>188</endLine>
+        <endColumn>26</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>195</line>
+        <index>7413</index>
+        <endIndex>7426</endIndex>
+        <startLine>195</startLine>
+        <startColumn>13</startColumn>
+        <endLine>195</endLine>
+        <endColumn>26</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>195</line>
+        <index>7452</index>
+        <endIndex>7465</endIndex>
+        <startLine>195</startLine>
+        <startColumn>52</startColumn>
+        <endLine>195</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>196</line>
+        <index>7497</index>
+        <endIndex>7510</endIndex>
+        <startLine>196</startLine>
+        <startColumn>13</startColumn>
+        <endLine>196</endLine>
+        <endColumn>26</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>196</line>
+        <index>7536</index>
+        <endIndex>7549</endIndex>
+        <startLine>196</startLine>
+        <startColumn>52</startColumn>
+        <endLine>196</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>200</line>
+        <index>7687</index>
+        <endIndex>7700</endIndex>
+        <startLine>200</startLine>
+        <startColumn>17</startColumn>
+        <endLine>200</endLine>
+        <endColumn>30</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to friendsListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>200</line>
+        <index>7726</index>
+        <endIndex>7739</endIndex>
+        <startLine>200</startLine>
+        <startColumn>56</startColumn>
+        <endLine>200</endLine>
+        <endColumn>69</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to ListBoxPhotos must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>221</line>
+        <index>8391</index>
+        <endIndex>8403</endIndex>
+        <startLine>221</startLine>
+        <startColumn>57</startColumn>
+        <endLine>221</endLine>
+        <endColumn>69</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to PictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>224</line>
+        <index>8554</index>
+        <endIndex>8571</endIndex>
+        <startLine>224</startLine>
+        <startColumn>21</startColumn>
+        <endLine>224</endLine>
+        <endColumn>38</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to PictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>225</line>
+        <index>8661</index>
+        <endIndex>8678</endIndex>
+        <startLine>225</startLine>
+        <startColumn>21</startColumn>
+        <endLine>225</endLine>
+        <endColumn>38</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to ListBoxPhotos must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>219</line>
+        <index>8279</index>
+        <endIndex>8291</endIndex>
+        <startLine>219</startLine>
+        <startColumn>17</startColumn>
+        <endLine>219</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to LabelAboutThePhoto must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>229</line>
+        <index>8773</index>
+        <endIndex>8790</endIndex>
+        <startLine>229</startLine>
+        <startColumn>13</startColumn>
+        <endLine>229</endLine>
+        <endColumn>30</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to PictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>245</line>
+        <index>9586</index>
+        <endIndex>9603</endIndex>
+        <startLine>245</startLine>
+        <startColumn>17</startColumn>
+        <endLine>245</endLine>
+        <endColumn>34</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to PictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>262</line>
+        <index>10386</index>
+        <endIndex>10403</endIndex>
+        <startLine>262</startLine>
+        <startColumn>17</startColumn>
+        <endLine>262</endLine>
+        <endColumn>34</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to PictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>279</line>
+        <index>11205</index>
+        <endIndex>11222</endIndex>
+        <startLine>279</startLine>
+        <startColumn>17</startColumn>
+        <endLine>279</endLine>
+        <endColumn>34</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByLikes must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>292</line>
+        <index>11765</index>
+        <endIndex>11780</endIndex>
+        <startLine>292</startLine>
+        <startColumn>13</startColumn>
+        <endLine>292</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByLikes must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>294</line>
+        <index>11916</index>
+        <endIndex>11931</endIndex>
+        <startLine>294</startLine>
+        <startColumn>13</startColumn>
+        <endLine>294</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>301</line>
+        <index>12178</index>
+        <endIndex>12196</endIndex>
+        <startLine>301</startLine>
+        <startColumn>13</startColumn>
+        <endLine>301</endLine>
+        <endColumn>31</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>303</line>
+        <index>12335</index>
+        <endIndex>12353</endIndex>
+        <startLine>303</startLine>
+        <startColumn>13</startColumn>
+        <endLine>303</endLine>
+        <endColumn>31</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelLikesAndComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>310</line>
+        <index>12606</index>
+        <endIndex>12630</endIndex>
+        <startLine>310</startLine>
+        <startColumn>13</startColumn>
+        <endLine>310</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelLikesAndComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>312</line>
+        <index>12777</index>
+        <endIndex>12801</endIndex>
+        <startLine>312</startLine>
+        <startColumn>13</startColumn>
+        <endLine>312</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to pictureBoxSuggests must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>318</line>
+        <index>12987</index>
+        <endIndex>13004</endIndex>
+        <startLine>318</startLine>
+        <startColumn>13</startColumn>
+        <endLine>318</endLine>
+        <endColumn>30</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to labelChoosePhoto must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>319</line>
+        <index>13035</index>
+        <endIndex>13050</endIndex>
+        <startLine>319</startLine>
+        <startColumn>13</startColumn>
+        <endLine>319</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to listBoxPhotos must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>321</line>
+        <index>13174</index>
+        <endIndex>13186</endIndex>
+        <startLine>321</startLine>
+        <startColumn>13</startColumn>
+        <endLine>321</endLine>
+        <endColumn>25</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to labelOrderBy must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>322</line>
+        <index>13217</index>
+        <endIndex>13228</endIndex>
+        <startLine>322</startLine>
+        <startColumn>13</startColumn>
+        <endLine>322</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to buttonSuggestMe must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>323</line>
+        <index>13259</index>
+        <endIndex>13273</endIndex>
+        <startLine>323</startLine>
+        <startColumn>13</startColumn>
+        <endLine>323</endLine>
+        <endColumn>27</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelLikesAndComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>324</line>
+        <index>13305</index>
+        <endIndex>13329</endIndex>
+        <startLine>324</startLine>
+        <startColumn>13</startColumn>
+        <endLine>324</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>325</line>
+        <index>13360</index>
+        <endIndex>13378</endIndex>
+        <startLine>325</startLine>
+        <startColumn>13</startColumn>
+        <endLine>325</endLine>
+        <endColumn>31</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelByLikes must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>326</line>
+        <index>13409</index>
+        <endIndex>13424</endIndex>
+        <startLine>326</startLine>
+        <startColumn>13</startColumn>
+        <endLine>326</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to linkLabelLikesAndComments must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>327</line>
+        <index>13455</index>
+        <endIndex>13479</endIndex>
+        <startLine>327</startLine>
+        <startColumn>13</startColumn>
+        <endLine>327</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to labelDetails must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>328</line>
+        <index>13511</index>
+        <endIndex>13522</endIndex>
+        <startLine>328</startLine>
+        <startColumn>13</startColumn>
+        <endLine>328</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to ListBoxPhotos must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>336</line>
+        <index>13772</index>
+        <endIndex>13784</endIndex>
+        <startLine>336</startLine>
+        <startColumn>13</startColumn>
+        <endLine>336</endLine>
+        <endColumn>25</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to ListBoxPhotos must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>339</line>
+        <index>13908</index>
+        <endIndex>13920</endIndex>
+        <startLine>339</startLine>
+        <startColumn>17</startColumn>
+        <endLine>339</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to ListBoxPhotos must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>342</line>
+        <index>13978</index>
+        <endIndex>13990</endIndex>
+        <startLine>342</startLine>
+        <startColumn>17</startColumn>
+        <endLine>342</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="SingleLineCommentMustBePrecededByBlankLine" ruleCheckId="SA1515">
+        <context>A single-line comment must be preceded by a blank line or another single-line comment, or must be the first item in its scope. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>414</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to CheckBoxShowMatchesWithPhotos must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>351</line>
+        <index>14282</index>
+        <endIndex>14310</endIndex>
+        <startLine>351</startLine>
+        <startColumn>41</startColumn>
+        <endLine>351</endLine>
+        <endColumn>69</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matcPeopleListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>356</line>
+        <index>14708</index>
+        <endIndex>14724</endIndex>
+        <startLine>356</startLine>
+        <startColumn>13</startColumn>
+        <endLine>356</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matcPeopleListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>358</line>
+        <index>14818</index>
+        <endIndex>14834</endIndex>
+        <startLine>358</startLine>
+        <startColumn>13</startColumn>
+        <endLine>358</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to genderTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>368</line>
+        <index>15228</index>
+        <endIndex>15240</endIndex>
+        <startLine>368</startLine>
+        <startColumn>38</startColumn>
+        <endLine>368</endLine>
+        <endColumn>50</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to genderTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>366</line>
+        <index>15150</index>
+        <endIndex>15162</endIndex>
+        <startLine>366</startLine>
+        <startColumn>51</startColumn>
+        <endLine>366</endLine>
+        <endColumn>63</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to genderTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>364</line>
+        <index>15063</index>
+        <endIndex>15075</endIndex>
+        <startLine>364</startLine>
+        <startColumn>39</startColumn>
+        <endLine>364</endLine>
+        <endColumn>51</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to homeTownTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>374</line>
+        <index>15407</index>
+        <endIndex>15421</endIndex>
+        <startLine>374</startLine>
+        <startColumn>36</startColumn>
+        <endLine>374</endLine>
+        <endColumn>50</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to homeTownTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>372</line>
+        <index>15333</index>
+        <endIndex>15347</endIndex>
+        <startLine>372</startLine>
+        <startColumn>39</startColumn>
+        <endLine>372</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to fromAgeTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>379</line>
+        <index>15577</index>
+        <endIndex>15590</endIndex>
+        <startLine>379</startLine>
+        <startColumn>45</startColumn>
+        <endLine>379</endLine>
+        <endColumn>58</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to fromAgeTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>377</line>
+        <index>15495</index>
+        <endIndex>15508</endIndex>
+        <startLine>377</startLine>
+        <startColumn>39</startColumn>
+        <endLine>377</endLine>
+        <endColumn>52</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matcPeopleListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>407</line>
+        <index>16877</index>
+        <endIndex>16893</endIndex>
+        <startLine>407</startLine>
+        <startColumn>21</startColumn>
+        <endLine>407</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
+        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>387</line>
+        <index>15793</index>
+        <endIndex>15844</endIndex>
+        <startLine>387</startLine>
+        <startColumn>13</startColumn>
+        <endLine>387</endLine>
+        <endColumn>64</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
+        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>388</line>
+        <index>15859</index>
+        <endIndex>15861</endIndex>
+        <startLine>388</startLine>
+        <startColumn>13</startColumn>
+        <endLine>388</endLine>
+        <endColumn>15</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
+        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>396</line>
+        <index>16349</index>
+        <endIndex>16401</endIndex>
+        <startLine>396</startLine>
+        <startColumn>13</startColumn>
+        <endLine>396</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
+        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>400</line>
+        <index>16522</index>
+        <endIndex>16524</endIndex>
+        <startLine>400</startLine>
+        <startColumn>13</startColumn>
+        <endLine>400</endLine>
+        <endColumn>15</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
+        <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>402</line>
+        <index>16541</index>
+        <endIndex>16592</endIndex>
+        <startLine>402</startLine>
+        <startColumn>13</startColumn>
+        <endLine>402</endLine>
+        <endColumn>64</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>419</line>
+        <index>17212</index>
+        <endIndex>17223</endIndex>
+        <startLine>419</startLine>
+        <startColumn>13</startColumn>
+        <endLine>419</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to messageButton must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>421</line>
+        <index>17308</index>
+        <endIndex>17320</endIndex>
+        <startLine>421</startLine>
+        <startColumn>13</startColumn>
+        <endLine>421</endLine>
+        <endColumn>25</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to circlePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>422</line>
+        <index>17352</index>
+        <endIndex>17367</endIndex>
+        <startLine>422</startLine>
+        <startColumn>13</startColumn>
+        <endLine>422</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchPictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>423</line>
+        <index>17399</index>
+        <endIndex>17413</endIndex>
+        <startLine>423</startLine>
+        <startColumn>13</startColumn>
+        <endLine>423</endLine>
+        <endColumn>27</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchAboutLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>424</line>
+        <index>17445</index>
+        <endIndex>17459</endIndex>
+        <startLine>424</startLine>
+        <startColumn>13</startColumn>
+        <endLine>424</endLine>
+        <endColumn>27</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to percentLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>425</line>
+        <index>17491</index>
+        <endIndex>17502</endIndex>
+        <startLine>425</startLine>
+        <startColumn>13</startColumn>
+        <endLine>425</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>430</line>
+        <index>17599</index>
+        <endIndex>17610</endIndex>
+        <startLine>430</startLine>
+        <startColumn>13</startColumn>
+        <endLine>430</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to messageButton must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>432</line>
+        <index>17693</index>
+        <endIndex>17705</endIndex>
+        <startLine>432</startLine>
+        <startColumn>13</startColumn>
+        <endLine>432</endLine>
+        <endColumn>25</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to circlePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>433</line>
+        <index>17736</index>
+        <endIndex>17751</endIndex>
+        <startLine>433</startLine>
+        <startColumn>13</startColumn>
+        <endLine>433</endLine>
+        <endColumn>28</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchPictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>434</line>
+        <index>17782</index>
+        <endIndex>17796</endIndex>
+        <startLine>434</startLine>
+        <startColumn>13</startColumn>
+        <endLine>434</endLine>
+        <endColumn>27</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchAboutLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>435</line>
+        <index>17827</index>
+        <endIndex>17841</endIndex>
+        <startLine>435</startLine>
+        <startColumn>13</startColumn>
+        <endLine>435</endLine>
+        <endColumn>27</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to percentLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>436</line>
+        <index>17872</index>
+        <endIndex>17883</endIndex>
+        <startLine>436</startLine>
+        <startColumn>13</startColumn>
+        <endLine>436</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to profilePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>439</line>
+        <index>18132</index>
+        <endIndex>18148</endIndex>
+        <startLine>439</startLine>
+        <startColumn>13</startColumn>
+        <endLine>439</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to percentLabel must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>441</line>
+        <index>18289</index>
+        <endIndex>18300</endIndex>
+        <startLine>441</startLine>
+        <startColumn>13</startColumn>
+        <endLine>441</endLine>
+        <endColumn>24</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to profilePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>455</line>
+        <index>18814</index>
+        <endIndex>18830</endIndex>
+        <startLine>455</startLine>
+        <startColumn>21</startColumn>
+        <endLine>455</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to profilePictureBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>455</line>
+        <index>18840</index>
+        <endIndex>18856</endIndex>
+        <startLine>455</startLine>
+        <startColumn>47</startColumn>
+        <endLine>455</endLine>
+        <endColumn>63</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matcPeopleListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>446</line>
+        <index>18459</index>
+        <endIndex>18475</endIndex>
+        <startLine>446</startLine>
+        <startColumn>17</startColumn>
+        <endLine>446</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>467</line>
+        <index>19212</index>
+        <endIndex>19223</endIndex>
+        <startLine>467</startLine>
+        <startColumn>34</startColumn>
+        <endLine>467</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to postStatusTextBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>472</line>
+        <index>19386</index>
+        <endIndex>19402</endIndex>
+        <startLine>472</startLine>
+        <startColumn>34</startColumn>
+        <endLine>472</endLine>
+        <endColumn>50</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matcPeopleListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>482</line>
+        <index>19691</index>
+        <endIndex>19707</endIndex>
+        <startLine>482</startLine>
+        <startColumn>13</startColumn>
+        <endLine>482</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matcPeopleListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>482</line>
+        <index>19733</index>
+        <endIndex>19749</endIndex>
+        <startLine>482</startLine>
+        <startColumn>55</startColumn>
+        <endLine>482</endLine>
+        <endColumn>71</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matcPeopleListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>483</line>
+        <index>19781</index>
+        <endIndex>19797</endIndex>
+        <startLine>483</startLine>
+        <startColumn>13</startColumn>
+        <endLine>483</endLine>
+        <endColumn>29</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matcPeopleListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>483</line>
+        <index>19823</index>
+        <endIndex>19839</endIndex>
+        <startLine>483</startLine>
+        <startColumn>55</startColumn>
+        <endLine>483</endLine>
+        <endColumn>71</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchAlertListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>489</line>
+        <index>20073</index>
+        <endIndex>20089</endIndex>
+        <startLine>489</startLine>
+        <startColumn>21</startColumn>
+        <endLine>489</endLine>
+        <endColumn>37</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchAlertListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>489</line>
+        <index>20115</index>
+        <endIndex>20131</endIndex>
+        <startLine>489</startLine>
+        <startColumn>63</startColumn>
+        <endLine>489</endLine>
+        <endColumn>79</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchAlertListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>495</line>
+        <index>20273</index>
+        <endIndex>20289</endIndex>
+        <startLine>495</startLine>
+        <startColumn>17</startColumn>
+        <endLine>495</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchAlertListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>495</line>
+        <index>20315</index>
+        <endIndex>20331</endIndex>
+        <startLine>495</startLine>
+        <startColumn>59</startColumn>
+        <endLine>495</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to matchAlertListBox must begin with the 'this.', 'base.', 'object.' or 'FacebookForm.' or 'Form.' prefix to indicate the intended method call. </context>
+        <line>493</line>
+        <index>20206</index>
+        <endIndex>20222</endIndex>
+        <startLine>493</startLine>
+        <startColumn>17</startColumn>
+        <endLine>493</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+    </violations>
   </sourcecode>
   <sourcecode name="FacebookForm.Designer.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 15:03:33.298</sourceFile>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.530</sourceFile>
       <parser>2020/08/10 21:30:53.244</parser>
       <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -628,14 +2009,34 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <project key="1246268587">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
-  <sourcecode name="FacebookForm.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="FormLoginSingleton.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020/08/10 21:30:53.244</styleCop>
-      <settingsFile>2021/01/31 11:32:35.722</settingsFile>
-      <sourceFile>2021/01/31 15:07:29.953</sourceFile>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.538</sourceFile>
+      <parser>2020/08/10 21:30:53.244</parser>
+      <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020/08/10 21:30:53.244</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020/08/10 21:30:53.244</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020/08/10 21:30:53.244</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="FormLoginSingleton.Designer.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020/08/10 21:30:53.244</styleCop>
+      <settingsFile>2021/01/31 19:50:58.564</settingsFile>
+      <sourceFile>2021/01/31 19:50:58.538</sourceFile>
       <parser>2020/08/10 21:30:53.244</parser>
       <StyleCop.CSharp.DocumentationRules>2020/08/10 21:30:53.244</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>2135888290</StyleCop.CSharp.DocumentationRules.FilesHashCode>

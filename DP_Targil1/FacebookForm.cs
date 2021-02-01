@@ -383,7 +383,7 @@ namespace DP_Targil1
 
             if (CheckBoxShowMatchesWithPhotos.Checked == true)
             {
-                MatchSuggestionWithAlbums matchSuggestion = new MatchSuggestionWithAlbums(ViewModel.MatchSuggestion, this.r_FormLogin.LoggedInUser);
+                MatchSuggestionDecorator matchSuggestion = new MatchSuggestionDecorator(new MatchSuggestionWithAlbums(ViewModel.MatchSuggestion, this.r_FormLogin.LoggedInUser));
                 matchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
                 foreach (FacebookUser matchedPeople in matchSuggestion.TopMatchedUsers)
                 {
@@ -396,7 +396,7 @@ namespace DP_Targil1
                 }
             }
 
-            if(CheckBoxShowMatchesWithPhotos.Checked == false)
+            if (CheckBoxShowMatchesWithPhotos.Checked == false)
             {
                 ViewModel.MatchSuggestion.CheckPersonMatch(filteredGender, filteredFromAge, filteredToAge, filteredHometown);
                 foreach (FacebookUser matchedPeople in ViewModel.MatchSuggestion.TopMatchedUsers)

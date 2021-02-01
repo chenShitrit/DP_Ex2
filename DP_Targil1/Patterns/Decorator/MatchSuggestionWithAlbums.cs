@@ -12,16 +12,13 @@ namespace DP_Targil1.Patterns.Decorator
         private const int k_Params = 5;
         private User m_LoggedInUser;
 
-        public List<FacebookUser> TopMatchedUsers { get; set; }
-
         public MatchSuggestionWithAlbums(IMatchSuggestion i_Interface, User i_LoggedInUser)
             : base(i_Interface)
         {
             this.m_LoggedInUser = i_LoggedInUser;
-            this.TopMatchedUsers = new List<FacebookUser>();
         }
 
-        public void CheckPersonMatch(string i_Gender, int i_FromAge, int i_ToAge, string i_Hometown)
+        public new void CheckPersonMatch(string i_Gender, int i_FromAge, int i_ToAge, string i_Hometown)
         {
             MatchSuggestion matchSuggestion = new MatchSuggestion(this.m_LoggedInUser);
 
